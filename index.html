@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F4F0E8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="321學神院學員">
+<title>321學神院學員</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAwFBMVEX+/OH99NT+9bD+7ar74qr94IP71HX6xlzw5cbs2Kzuz4/sw4Pa2MzbxJvGxb6ry9vdsnjsrka7t6+/rJjSoVmyoI7VkDC6iUeesLyYnaCXkI+RhHNtn9Fnj71yg6BGf8WzdiqEcWCVYCOCThlXcJdZY3hVV19WSUE3a60aaMYtWpgUWawyS3IaSo4KT6MGRJlKOCwqNFATN28SJEsCOH4CKWQCIFMCETUAN4oAKmoAImIAHlAAGFYAFj8AETsACiu+q0AtAAADFUlEQVR42j2T59KqMBCGQy8C0kVKKNKLCIpSRO//rr51zszZHzDJ+2zeTbJB+75tz+c0LY/H3HV933d1Xbs4xdhy6+baI5DXaQH5Mfd9DVNNWaau6lqWbKVlXaN/8txfG9CaMghTHGCdZkWZljFOU/RLnq9lGB6doApD3zkKuiJoHEmTsnHGGEFyU6Zd31SNd/SbqqpCXbRtjSIRLRsWAP21attimPu5NcesrKprKx40jkAsQYmyAStc45NgGdnyiBNPErPrPMi8xvIAEKR4RlAdDsB7uHuO7/tHvEyRdGBVjiEZhhAtBKVXYZDe11T56c46moLEUDaPSIQo0UCwNdeKi3y9Vq5+dKZcpQVKjBKwQCQNQFkqRhj4SrbMw8EZPYZhaP50Scj/AGaM4Of9fuen3KQkRdcBsEmCJEnYBgpxFFu6cuzWLSqKtqrmNSaiRBNFSrXADAWBdXvdm6ofosv+nq/z+3YwE03jBMHyUodEAZxtXGTYM2TLMqzMkg+CSsue5xqMiMsU6briSPRB01RZ4IXhe4PjkXwc6ALDmnkdonPQNKEv8TSUT3rf741XnEDhCYa1vHYcSwQ9UYa+H/hHReKF29ckFDc+HWjWjLNubDPUdXDXjnQExlH4c2YIRtzmiUZSrOm5Vo6mcezqJnDOiqLgPG0HWYZ5lWU5jVKHDCNoyHWs667EinXfiyJ2ZYrlOJazT6fL8IaOWsf0rEj6WTfu21Zcinv809W4HYb7fVxRN6aKIPEEQbjf+3CDSEyWIiQIJdtSjNIaKzr4SwTS81uS3C6JgBBB8EDw6Vij8KxDTQfVNFUayVGSnAgk/oamqlpyuqIsuVwiDWqKosimCI5FtGZrEJFmX5JTji4Qia1FkQmIzSACUJszYSk7+kk/oMizrG3ruo1NjqC0E9xA2Y0j9HoBwG0Yl/UNL/S9rkttiaLXPR79vG77Z3+v44DW7fN67Rs83+m5f6ZhWPfnMs8LEK/X67Oj1/f3/+zb+nhM275M+7bM/fLc9w9kvl7oCwHA5/Ncpm3b1ukJH9B/6k/7AzYPfMEIvqvGAAAAAElFTkSuQmCC">
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+<style>:root{--bg:#F4F0E8;--card:#FDFBF6;--ink:#25304A;--sub:#6B7285;--tag:#EAE4D6;--line:#E4DDCF;--acc:#8A5A2B;--acc2:#B9894F;--red:#A0452E;--redbg:#F6E3DE;--ok:#3F7A4F;--okbg:#E2EFE3;--hl:#FBE7A6;--fs:18px}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;font-size:var(--fs);line-height:1.7}
+button,input,select,textarea{font:inherit;color:inherit}
+#app{max-width:760px;margin:0 auto;padding:0 16px 120px}
+.top{position:sticky;top:0;z-index:5;background:var(--bg);display:flex;align-items:center;gap:8px;padding:12px 0 10px;border-bottom:1px solid var(--line);margin-bottom:14px}
+.top h1{font-size:1.05em;margin:0;flex:1;line-height:1.35}
+.back{border:0;background:var(--tag);border-radius:12px;padding:6px 12px;cursor:pointer}
+.hero{padding:22px 0 8px}
+.hero h1{font-size:1.5em;margin:0 0 4px;letter-spacing:.02em}
+.hero p{margin:0;color:var(--sub);font-size:.9em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin:12px 0;box-shadow:0 1px 2px rgba(60,40,10,.04)}
+.row{display:flex;align-items:center;gap:14px}
+.badge{flex:none;width:56px;height:56px;border-radius:16px;background:var(--tag);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.2em;color:var(--sub)}
+.badge.done{background:var(--okbg);color:var(--ok)}
+.grow{flex:1;min-width:0}
+.ttl{font-weight:700;line-height:1.4}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.chip{background:var(--tag);border-radius:999px;padding:2px 12px;font-size:.78em}
+.chip.ok{background:var(--okbg);color:var(--ok)}
+.chip.red{background:var(--redbg);color:var(--red)}
+.bar{height:8px;background:var(--tag);border-radius:8px;overflow:hidden;margin-top:10px}
+.bar i{display:block;height:100%;background:var(--acc2);border-radius:8px}
+.muted{color:var(--sub);font-size:.88em}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;cursor:pointer;min-height:84px}
+.tile b{display:block;margin-bottom:2px}
+.tile span{font-size:.8em;color:var(--sub)}
+.tabs{display:flex;gap:6px;background:var(--tag);border-radius:14px;padding:4px;margin-bottom:14px}
+.tabs button{flex:1;border:0;background:none;border-radius:10px;padding:8px 4px;cursor:pointer;font-size:.9em}
+.tabs button.on{background:var(--card);font-weight:700;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.doc h2{font-size:1.2em;margin:28px 0 10px;padding-top:6px;border-top:1px solid var(--line)}
+.doc h3{font-size:1.05em;margin:20px 0 8px;color:var(--acc)}
+.doc p,.doc li{margin:0 0 12px}
+.rd{border-radius:8px;transition:background .2s;cursor:pointer}
+.rd.hl{background:var(--hl)}
+.rd.spk{outline:2px solid var(--acc2);background:#FFF4DC}
+.note{background:#F1ECE1;border-left:3px solid var(--acc2);padding:6px 10px;margin:-6px 0 12px;font-size:.85em;border-radius:6px;white-space:pre-wrap}
+.tw{overflow-x:auto;margin:0 0 14px}
+table{border-collapse:collapse;width:100%;font-size:.86em;background:var(--card)}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+th{background:var(--tag)}
+.info{display:grid;grid-template-columns:6.5em 1fr;gap:6px 10px;font-size:.9em}
+.info b{color:var(--sub);font-weight:600}
+.btn{border:0;background:var(--ink);color:#fff;border-radius:12px;padding:10px 16px;cursor:pointer;font-weight:600}
+.btn.alt{background:var(--tag);color:var(--ink)}
+.btn.warn{background:var(--red)}
+.btn[disabled]{opacity:.4}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.opt{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--card);border-radius:14px;padding:12px;margin:8px 0;cursor:pointer}
+.opt.pick{border-color:var(--acc2);background:#FFF6E6}
+.opt.best{border-color:var(--ok);background:var(--okbg)}
+.opt small{display:block;color:var(--sub);margin-top:4px}
+label.ck{display:flex;gap:10px;align-items:flex-start;padding:8px 0;cursor:pointer}
+label.ck input{width:22px;height:22px;flex:none;margin-top:4px;accent-color:var(--acc)}
+textarea,input[type=text],input[type=date],input[type=number],select{width:100%;border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:#fff;margin:4px 0 10px}
+textarea{min-height:76px;resize:vertical}
+.fl{font-size:.85em;color:var(--sub);display:block}
+#sheet{position:fixed;inset:0;background:rgba(20,20,30,.35);display:none;z-index:20;align-items:flex-end;justify-content:center}
+#sheet.on{display:flex}
+#sheet .pan{background:var(--card);width:100%;max-width:760px;max-height:88vh;overflow:auto;border-radius:20px 20px 0 0;padding:18px 16px calc(18px + env(safe-area-inset-bottom))}
+#toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:8px 16px;border-radius:999px;font-size:.85em;display:none;z-index:30}
+#spkbar{position:fixed;left:0;right:0;bottom:0;background:var(--ink);color:#fff;display:none;z-index:15;padding:10px 16px calc(10px + env(safe-area-inset-bottom));justify-content:center;gap:10px}
+#spkbar.on{display:flex}
+#spkbar button{background:rgba(255,255,255,.14);border:0;color:#fff;border-radius:10px;padding:8px 14px;cursor:pointer}
+.chat{max-height:52vh;overflow:auto;margin:10px 0}
+.msg{padding:10px 12px;border-radius:14px;margin:8px 0;white-space:pre-wrap;font-size:.92em}
+.msg.u{background:var(--tag);margin-left:18%}
+.msg.a{background:#fff;border:1px solid var(--line);margin-right:8%}
+.lock{min-height:90vh;display:flex;flex-direction:column;justify-content:center}
+.warnbox{background:var(--redbg);color:var(--red);border-radius:12px;padding:10px 12px;font-size:.85em;margin:8px 0}
+.okbox{background:var(--okbg);color:var(--ok);border-radius:12px;padding:10px 12px;font-size:.9em;margin:8px 0}
+.cert{text-align:center;border:3px double var(--acc2);padding:28px 18px;background:#FFFDF8}
+.cert h2{margin:6px 0;font-size:1.4em}
+svg text{font-family:inherit}
+@media print{.top,.btns,#spkbar{display:none}body{background:#fff}}
+:root{--surface:var(--card);--sunk:#F1ECE1;--muted:var(--sub);--accent:#1F4E6B;--accent-soft:rgba(31,78,107,.10);--red-soft:rgba(160,69,46,.10);--crit:#B4561C;
+--hl-gold:#F5E6C4;--hl-green:#DDEFD9;--hl-blue:#DCE7F7;--hl-pink:#FADDE4;--hl-purple:#E8DEF4;--hl-maroon:#F0DADA;--hl-brown:#EEE1CD;--hl-charcoal:#E3E2DE;--reading:#D6E3F7;--serif:"Noto Serif TC","PMingLiU","Songti TC",serif}
+#doc .sent{cursor:pointer;border-radius:2px}
+.sent[data-hl]{background:linear-gradient(transparent 55%,var(--hl-gold) 55%)}
+.sent[data-color="green"]{background:linear-gradient(transparent 55%,var(--hl-green) 55%)}
+.sent[data-color="blue"]{background:linear-gradient(transparent 55%,var(--hl-blue) 55%)}
+.sent[data-color="pink"]{background:linear-gradient(transparent 55%,var(--hl-pink) 55%)}
+.sent[data-color="purple"]{background:linear-gradient(transparent 55%,var(--hl-purple) 55%)}
+.sent[data-color="maroon"]{background:linear-gradient(transparent 55%,var(--hl-maroon) 55%)}
+.sent[data-color="brown"]{background:linear-gradient(transparent 55%,var(--hl-brown) 55%)}
+.sent[data-color="charcoal"]{background:linear-gradient(transparent 55%,var(--hl-charcoal) 55%)}
+.sent.tts-reading{box-shadow:inset 0 0 0 999px var(--reading);-webkit-box-decoration-break:clone;box-decoration-break:clone;transition:box-shadow .2s}
+.hl-note{margin:6px 0 12px;padding:8px 12px;background:var(--sunk);border-left:3px solid #D9B168;border-radius:6px;font-size:.85em;white-space:pre-wrap;line-height:1.6}
+.hl-note[data-color="green"]{border-left-color:#6FAE71}.hl-note[data-color="blue"]{border-left-color:#6C93D1}.hl-note[data-color="pink"]{border-left-color:#E58FA0}.hl-note[data-color="purple"]{border-left-color:#A48AC9}.hl-note[data-color="maroon"]{border-left-color:#8C4A4E}.hl-note[data-color="brown"]{border-left-color:#8A6740}.hl-note[data-color="charcoal"]{border-left-color:#54534E}
+.hlsheet-mask{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:40;display:flex;align-items:flex-end}
+.hlsheet-card{background:var(--surface);width:100%;max-width:720px;margin:0 auto;max-height:86vh;overflow-y:auto;border-radius:18px 18px 0 0;padding:18px 18px calc(18px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:12px}
+.hlsheet-title{font-weight:700}
+.hlsheet-quote{background:var(--hl-gold);border-radius:8px;padding:10px 12px;font-family:var(--serif);line-height:1.8}
+.hlsheet-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.hlsheet-label{font-size:.8em;color:var(--muted);min-width:2.5em}
+.hlsheet-colors{display:flex;gap:10px;flex-wrap:wrap}
+.hlswatch{width:30px;height:30px;border-radius:50%;border:2px solid transparent;padding:0;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.hlswatch.active{border-color:var(--ink)}
+.spanrow{display:flex;align-items:center;gap:8px}
+.spanbtn{min-width:38px;height:34px;border-radius:9px;border:1px solid var(--line);background:var(--surface)}
+.spannum{font-size:.85em;color:var(--muted);min-width:3em;text-align:center}
+.hl-hint{margin:0;font-size:.78em;color:var(--muted)}
+.hlsheet-ta,.chatinput textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:inherit;font-size:16px;background:var(--sunk);color:var(--ink);resize:vertical;margin:0}
+.hlsheet-ta{min-height:84px}
+.hlsheet-acts{display:flex;gap:8px}
+.sbtn{flex:1;border-radius:10px;padding:10px;border:1px solid var(--line);background:var(--surface);font-weight:500}
+.sbtn.pri{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.sbtn.danger{color:var(--crit);border-color:var(--crit)}
+.readbar{display:flex;flex-direction:column;gap:6px}
+.readbtn[data-state="playing"],.readbtn[data-state="loading"]{background:var(--accent)}
+.chatwrap{display:flex;flex-direction:column;gap:10px}
+.chatctx{align-self:flex-start;font-size:.78em;color:var(--muted);background:var(--sunk);border-radius:999px;padding:4px 12px}
+.qs-toggle{align-self:flex-start;border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:5px 14px;font-size:.82em;font-weight:700}
+.qs-panel{border:1px solid var(--line);border-radius:12px;background:var(--sunk);padding:10px;display:flex;flex-direction:column;gap:6px}
+.qs-chip{text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:8px 12px;font-size:.85em;line-height:1.5}
+.chatlog{display:flex;flex-direction:column;gap:10px;min-height:120px}
+.chatlog.rp{max-height:52vh;overflow:auto;min-height:60px;margin:10px 0}
+.msg{max-width:92%;padding:10px 14px;border-radius:14px;line-height:1.8;margin:0;white-space:normal;font-size:1em}
+.msg.user{background:var(--accent);color:#fff;margin-left:auto;border-bottom-right-radius:4px;white-space:pre-wrap}
+.msg.ai{background:var(--surface);border:1px solid var(--line);margin-right:auto;border-bottom-left-radius:4px}
+.msg.ai p{margin:0 0 8px}.msg.ai p:last-child{margin-bottom:0}
+.msg.ai h4{margin:12px 0 4px;font-size:1em;color:var(--accent);font-family:var(--serif)}
+.msg.ai blockquote{margin:8px 0;padding:6px 12px;border-left:3px solid var(--red);background:var(--red-soft);border-radius:0 8px 8px 0;font-family:var(--serif)}
+.msg.ai ul{margin:4px 0 8px;padding-left:20px}.msg.ai li{margin-bottom:4px}
+.msg.ai hr{border:none;border-top:1px solid var(--line);margin:10px 0}
+.msg.ai .mdtb{display:block;width:100%;overflow-x:auto;border-collapse:collapse;margin:10px 0;font-size:.88em}
+.msg.ai .mdtb th,.msg.ai .mdtb td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
+.msg.ai .mdtb th{background:var(--sunk)}
+.msg .sent{cursor:pointer}
+.msg-actions{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px;padding-top:6px;border-top:1px solid var(--line)}
+.msg-act{border:none;background:transparent;color:var(--muted);font-size:.78em;padding:4px 8px;border-radius:999px}
+.msg-act.on{color:var(--accent);font-weight:700}
+.chatinput{display:flex;gap:8px;position:sticky;bottom:calc(8px + env(safe-area-inset-bottom,0px));background:var(--bg);padding-block:8px}
+.chatinput textarea{resize:none;max-height:120px}
+.chatinput button{border:none;background:var(--accent);color:#fff;border-radius:10px;padding:0 16px;font-weight:700;white-space:nowrap;flex:0 0 auto}
+.chatnote{margin:0;font-size:.74em}
+.msg-q{font-weight:700;font-size:.9em;color:var(--accent);margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.msg.col .msg-body{max-height:10.5em;overflow:hidden;-webkit-mask-image:linear-gradient(#000 60%,transparent);mask-image:linear-gradient(#000 60%,transparent)}
+.msg-more{display:none;border:none;background:none;color:var(--accent);font-size:.82em;font-weight:700;padding:4px 0}
+.msg.col .msg-more{display:block}
+.hllist{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.hlitem{display:flex;gap:10px;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.hlbar{flex:0 0 5px;border-radius:3px}
+.hlmeta{display:flex;flex-direction:column;gap:4px;min-width:0}
+.hlsrc{font-size:.72em;color:var(--muted)}
+.hlt{font-family:var(--serif);line-height:1.7}
+.hln{font-size:.82em;background:var(--sunk);border-radius:6px;padding:4px 8px;white-space:pre-wrap}
+.updbar{position:fixed;left:0;right:0;top:0;z-index:60;border:none;background:#B98A2E;color:#fff;font-weight:700;font-size:.9em;padding:10px 16px;padding-top:calc(10px + env(safe-area-inset-top,0px))}
+.cardpv{background:var(--sunk);border-radius:12px;overflow:hidden;text-align:center}
+.cardpv img{max-width:100%;max-height:48vh;display:block;margin:0 auto;-webkit-touch-callout:default;user-select:auto}
+.cchips{display:flex;gap:6px;flex-wrap:wrap}
+.cchip{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:5px 12px;font-size:.82em;font-weight:500}
+.cchip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.brandicon{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.homeicon{width:64px;height:64px;border-radius:16px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+[hidden]{display:none!important}
+.bigcode{font-size:2.6em;font-weight:800;letter-spacing:10px;margin:4px 0;color:var(--accent)}
+.lamps{display:flex;gap:6px;justify-content:space-between;margin-top:8px}
+.lamp{flex:1;text-align:center;cursor:pointer;font-size:.78em;color:#6B7285}
+.lamp i{display:block;width:26px;height:26px;margin:0 auto 4px;border-radius:50%;background:#E4DDCF;border:2px solid #D6CDBB}
+.lamp.on i{background:radial-gradient(circle at 40% 35%,#FFF3C4,#E8B84A 60%,#C48A1E);border-color:#C48A1E;box-shadow:0 0 10px rgba(232,184,74,.7)}
+.lamp.on{color:#25304A;font-weight:700}
+</style></head><body>
+<div id="app"></div>
+<div id="sheet" onclick="if(event.target===this)closeSheet()"><div class="pan" id="sheetpan"></div></div>
+<div id="toast"></div><img class="brandicon" alt="" src="data:image/png;base64,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">
+<div id="spkbar"><button onclick="ttsStop()">⏹ 停止朗讀</button></div>
+<script>var DATA=null;
+var VER = '1.0.1';
+var KEY = 'st321v1';
+var APPNAME = '321學神院學員';
+var COURSE = '作耶穌的門徒（學員必讀）';
+var NLES = 6;
+var TTS_URL = 'https://azure-tts.spch321.workers.dev';
+var AI_URL = 'https://xiaozhi-proxy.spch321.workers.dev';
+/* 授權碼：存放「正規化後代碼」的雜湊值（學神院發給學員的入學碼）。小家長、助教、負責人身分碼也可開通。 */
+var ACCESS = ["2t22wc"];
+var SEASONS = ['小子', '少年人', '父老'];
+
+var S = load();
+
+function $(id) { return document.getElementById(id); }
+function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+function il(s) { return esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>'); }
+function plain(s) { return String(s).replace(/\*\*/g, ''); }
+function hash(s) { var x = 5381, i; for (i = 0; i < s.length; i++) { x = ((x << 5) + x + s.charCodeAt(i)) | 0; } return (x >>> 0).toString(36); }
+function norm(c) { return String(c || '').toUpperCase().replace(/[\s\-_]/g, ''); }
+function today() { var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
+function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
+function daysSince(d) { if (!d) return 9999; var a = d.split('-'); return Math.floor((new Date() - new Date(+a[0], +a[1] - 1, +a[2])) / 864e5); }
+
+function fix(s) {
+  var n;
+  s.auth = s.auth || {};
+  s.les = s.les || {};
+  for (n = 1; n <= NLES; n++) { s.les[n] = s.les[n] || {}; var L = s.les[n]; L.hl = L.hl || {}; L.nt = L.nt || {}; L.st = L.st || {}; L.tk = L.tk || {}; L.rf = L.rf || {}; if (L.sc === undefined) L.sc = null; L.done = L.done || 0; L.pos = L.pos || 0; }
+  s.prep = s.prep || {}; s.fam = s.fam || {}; s.kin = s.kin || []; s.log = s.log || []; s.wit = s.wit || []; s.teach = s.teach || [];
+  s.int = s.int || { ok: 0, by: '', d: '' };
+  s.set = s.set || {}; if (!s.set.fs) s.set.fs = 18; if (typeof s.set.voice !== 'number') s.set.voice = 0; if (!(s.set.rate > 0) || s.set.rate > 2) s.set.rate = 1;
+  s.hls = s.hls || {}; s.chat = s.chat || []; s.fav = s.fav || [];
+  s.cert = s.cert || { name: '', d: '' };
+  s.pf = s.pf || {}; s.pf.name = s.pf.name || ''; s.pf.term = s.pf.term || '';
+  return s;
+}
+function load() { try { var t = localStorage.getItem(KEY); if (t) return fix(JSON.parse(t)); } catch (e) { } return fix({}); }
+function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { toast('無法儲存，請檢查瀏覽器設定'); } }
+
+function iconSrc() { var i = document.querySelector('.brandicon'); return i ? i.src : 'icon-192.png'; }
+function toast(t) { var el = $('toast'); el.textContent = t; el.style.display = 'block'; clearTimeout(toast.t); toast.t = setTimeout(function () { el.style.display = 'none'; }, 2200); }
+function sheet(html) { $('sheetpan').innerHTML = html; $('sheet').className = 'on'; }
+function closeSheet() { $('sheet').className = ''; }
+function copyTxt(t) { try { navigator.clipboard.writeText(t).then(function () { toast('已複製'); }, function () { fallbackCopy(t); }); } catch (e) { fallbackCopy(t); } }
+function fallbackCopy(t) { var a = document.createElement('textarea'); a.value = t; document.body.appendChild(a); a.select(); try { document.execCommand('copy'); toast('已複製'); } catch (e) { toast('請手動複製'); } document.body.removeChild(a); }
+function shareTxt(t) { if (navigator.share) { navigator.share({ text: t }).catch(function () { }); } else copyTxt(t); }
+function opts(arr, sel) { var s = '', i; for (i = 0; i < arr.length; i++) s += '<option' + (arr[i] === sel ? ' selected' : '') + '>' + esc(arr[i]) + '</option>'; return s; }
+function rerender() { var y = window.scrollY; render(); window.scrollTo(0, y); }
+
+/* ---------- 進度 ---------- */
+function les(n) { return DATA[n - 1]; }
+function tasksDone(n) { var L = S.les[n], c = 0, i; for (i = 0; i < les(n).tasks.length; i++) if (L.tk[i]) c++; return c; }
+function lesDone(n) { return !!S.les[n].done; }
+function lesCount() { var c = 0, n; for (n = 1; n <= NLES; n++) if (lesDone(n)) c++; return c; }
+function lesStarted(n) { var L = S.les[n], k; for (k in L.hl) return true; for (k in L.st) return true; for (k in L.tk) if (L.tk[k]) return true; return L.sc !== null || L.pos > 0; }
+function cnt() { return { wit: S.wit.length, teach: S.teach.length }; }
+function gateOk() { return true; }
+function credit() { return lesCount() === NLES && prepOk() && S.wit.length >= 1 && S.int.ok; }
+/* ---------- 路由 ---------- */
+function go(h) { location.hash = h; }
+window.onhashchange = function () { ttsStop(); qsa('.hlsheet-mask').forEach(function (x) { x.parentNode.removeChild(x); }); closeSheet(); render(); window.scrollTo(0, 0); };
+function render() {
+  document.documentElement.style.setProperty('--fs', S.set.fs + 'px');
+  if (!S.auth.ok) { renderLock(); return; }
+  var h = (location.hash || '#home').slice(1).split('/');
+  var v = h[0];
+  if (v === 'les') renderLesson(+h[1], h[2] || 'script');
+  else if (v === 'intern') renderIntern();
+  else if (v === 't') renderTool(h[1]);
+  else if (v === 'set') renderSet();
+  else if (v === 'cert') renderCert();
+  else if (v === 'chat') renderChat();
+  else if (v === 'fav') renderFav();
+  else if (v === 'hls') renderHls();
+  else renderHome();
+}
+function topbar(title, back) { return '<div class="top"><button class="back" onclick="go(\'' + (back || 'home') + '\')">‹ 返回</button><h1>' + esc(title) + '</h1></div>'; }
+
+/* ---------- 授權 ---------- */
+function renderLock() {
+  $('app').innerHTML = '<div class="lock"><img class="homeicon" style="width:88px;height:88px;border-radius:22px;margin-bottom:14px" alt="" src="' + iconSrc() + '"><h1 style="margin:0">' + APPNAME + '</h1><p class="muted">' + COURSE + '・預備期四週・生命成長旅程</p><div class="card"><b>🔒 開通</b><p class="muted">請輸入學神院發給你的<b>入學碼</b>（錄取通知上會有）；小家長、助教、負責人也可用自己的身分碼開通。</p><input type="text" id="code" placeholder="入學碼或身分碼" autocomplete="off"><button class="btn" onclick="unlock()">開通</button><div id="lockmsg"></div></div></div>';
+}
+function unlock(c) {
+  var raw = c || ($('code') && $('code').value) || '', v = norm(raw), role = roleOfCode(raw);
+  if (role || (v && ACCESS.indexOf(hash(v)) >= 0)) {
+    S.auth = { ok: 1, d: today(), role: role || 'student' }; save(); toast('歡迎回家！');
+    if (!c) { go('home'); render(); } return true;
+  }
+  if (!c) $('lockmsg').innerHTML = '<div class="warnbox">代碼不正確。請輸入學神院發給你的入學碼；若還沒有，請問你的小家長。</div>';
+  return false;
+}
+/* ---------- 助教五盞燈 ---------- */
+function lamps() { return []; }
+function daysBetween(a, b) { return 0; }
+function lampRow() {
+  var l = lamps(), h = '<div class="lamps">', i;
+  for (i = 0; i < l.length; i++) h += '<div class="lamp' + (l[i][1] ? ' on' : '') + '" onclick="toast(\'' + esc(l[i][2]).replace(/'/g, '') + '\')"><i></i><span>' + l[i][0] + '</span></div>';
+  return h + '</div>';
+}
+
+/* ---------- 首頁 ---------- */
+function renderHome() {
+  var lc = lesCount(), n, h = '', pd = 0, w;
+  for (w = 1; w <= 4; w++) pd += prepDone(w);
+  h += '<div class="hero row"><img class="homeicon" alt="" src="' + iconSrc() + '"><div class="grow"><h1>' + APPNAME + '</h1><p>' + COURSE + '　v' + VER + '</p></div></div>';
+  h += '<div class="card"><div class="ttl">歡迎回家' + (S.pf.name ? '，' + esc(S.pf.name) : '') + '</div><p style="margin:4px 0">你是學神院的<b>學員</b>，也是 235 學習小家的<b>家人</b>。</p><p class="muted" style="margin:4px 0">「這樣，你們不再作外人和客旅，是與聖徒同國，是神家裡的人了。」（以弗所書 2:19）</p><div class="chips">' + (S.fam.g ? '<span class="chip">小家 ' + esc(S.fam.g) + '</span>' : '<span class="chip red" onclick="go(\'t/home\')">填寫我的小家</span>') + (S.fam.bd ? '<span class="chip">同伴 ' + esc(S.fam.bd) + '</span>' : '') + '<span class="chip">' + weekLabel() + '</span></div></div>';
+  if (!prepOk()) h += '<div class="card" style="cursor:pointer" onclick="go(\'t/prep\')"><div class="ttl">預備期四週</div><div class="chips"><span class="chip">任務 ' + pd + '/16</span><span class="chip' + (prepAtt() >= 3 ? ' ok' : '') + '">出席 ' + prepAtt() + '/4</span></div><div class="bar"><i style="width:' + Math.round(pd / 16 * 100) + '%"></i></div></div>';
+  h += '<div class="card"><div class="ttl">這週的學習在哪裡做？</div><p class="muted" style="margin:4px 0">簽到、作業、測驗、920 自省、同伴問責、個人週報 → <b>學神院 App</b><br>預備期、我的小家、生命日誌、見證本、教給一個人 → <b>這個 App</b></p></div>';
+  h += '<div class="card"><div class="row"><div class="grow"><div class="ttl">我的學習</div><div class="chips"><span class="chip' + (lc === NLES ? ' ok' : '') + '">六課 ' + lc + '/6</span><span class="chip' + (prepOk() ? ' ok' : '') + '">預備期 ' + (prepOk() ? '✓' : pd + '/16') + '</span><span class="chip' + (S.wit.length ? ' ok' : '') + '">見證 ' + S.wit.length + '</span><span class="chip">教給一個人 ' + S.teach.length + '</span></div></div></div><div class="bar"><i style="width:' + Math.round(lc / NLES * 100) + '%"></i></div>';
+  if (credit()) h += '<div class="btns"><button class="btn" onclick="go(\'cert\')">🎓 查看完成證明</button></div>';
+  else h += '<div class="btns" style="margin-top:10px"><button class="btn alt" onclick="go(\'intern\')">完成條件 ›</button></div>';
+  h += '</div>';
+  for (n = 1; n <= NLES; n++) {
+    var d = les(n), done = lesDone(n), st = done ? '<span class="chip ok">已完成</span>' : lesStarted(n) ? '<span class="chip">進行中</span>' : '<span class="chip">未開始</span>';
+    var tt = d.title.split('　')[1] || d.title;
+    h += '<div class="card" style="cursor:pointer" onclick="go(\'les/' + n + '\')"><div class="row"><div class="badge' + (done ? ' done' : '') + '">' + (done ? '✓' : n) + '</div><div class="grow"><div class="ttl">' + esc(tt) + '</div><div class="chips"><span class="chip">第' + n + '課</span>' + st + '<span class="chip">實作 ' + tasksDone(n) + '/' + d.tasks.length + '</span></div></div><div class="muted">›</div></div></div>';
+  }
+  h += '<h3 style="margin:22px 0 6px">我的工具</h3><div class="grid">';
+  var T = [['t/prep', '預備期四週', '一週四個小任務'], ['t/home', '我的小家', '同伴・家人・求助次序'], ['t/log', '生命成長日誌', '神這週做了什麼'], ['t/wit', '見證本', '五重的改變・結業見證'], ['t/teach', '教給一個人', '第八步：繁殖'], ['chat', '💬 問小智', '學習與生活的問題'], ['hls', '🖍 我的畫線', '畫線與領受筆記'], ['fav', '★ 我的收藏', '收藏的小智回答']];
+  for (n = 0; n < T.length; n++) h += '<div class="tile" onclick="go(\'' + T[n][0] + '\')"><b>' + T[n][1] + '</b><span>' + T[n][2] + '</span></div>';
+  h += '</div><div class="btns" style="margin-top:18px"><button class="btn alt" onclick="go(\'set\')">⚙︎ 設定・備份</button></div>';
+  $('app').innerHTML = h;
+}
+/* ---------- 課程 ---------- */
+var CUR = { n: 0 };
+function renderLesson(n, tab) {
+  if (!(n >= 1 && n <= NLES)) { go('home'); return; }
+  CUR.n = n;
+  var d = les(n), h = topbar(d.title, 'home');
+  var tabs = [['script', '講稿'], ['scen', '情境'], ['steps', '八步驟'], ['work', '實作']];
+  h += '<div class="tabs">';
+  for (var i = 0; i < tabs.length; i++) h += '<button class="' + (tab === tabs[i][0] ? 'on' : '') + '" onclick="go(\'les/' + n + '/' + tabs[i][0] + '\')">' + tabs[i][1] + '</button>';
+  h += '</div><div id="lbody"></div>';
+  $('app').innerHTML = h;
+  if (tab === 'scen') renderScen(n); else if (tab === 'steps') renderSteps(n); else if (tab === 'work') renderWork(n); else renderScript(n);
+}
+function rpWho(n) { var m = (les(n).scen.prac || '').match(/請小智扮演([^」]+)」/); return m ? m[1] : '小家長'; }
+function renderScen(n) {
+  var sc = les(n).scen, L = S.les[n], h = '<div class="card"><div class="ttl">' + esc(sc.h) + '</div><p>' + il(sc.q) + '</p></div>';
+  var best = ''; var m = sc.ana.join('').match(/建議的回應是\s*([A-D])/); if (m) best = m[1];
+  for (var i = 0; i < sc.opts.length; i++) {
+    var o = sc.opts[i], cls = 'opt';
+    if (L.sc !== null) { if (o[0] === best) cls += ' best'; else if (L.sc === i) cls += ' pick'; }
+    h += '<button class="' + cls + '" onclick="pickScen(' + n + ',' + i + ')"><b>' + esc(o[0]) + '</b>　' + il(o[1]) + (L.sc !== null ? '<small>' + il(o[2]) + '</small>' : '') + '</button>';
+  }
+  if (L.sc !== null) {
+    h += '<div class="card"><div class="ttl">解析</div>';
+    for (i = 0; i < sc.ana.length; i++) h += '<p>' + il(sc.ana[i]) + '</p>';
+    h += '</div>';
+  } else h += '<p class="muted">先選一個你最可能的真實反應，再看解析。</p>';
+  h += '<div class="card"><div class="ttl">對練</div><p class="muted">' + il(sc.prac) + '</p><div class="btns"><button class="btn" onclick="rolePlay(' + n + ')">💬 請小智扮演' + esc(rpWho(n)) + '</button><button class="btn alt" onclick="go(\'les/' + n + '/steps\')">下一步：八步驟 ›</button></div></div>';
+  $('lbody').innerHTML = h;
+}
+function pickScen(n, i) { S.les[n].sc = i; save(); renderScen(n); }
+function renderSteps(n) {
+  var st = les(n).steps, L = S.les[n], h = '', c = 0, i;
+  for (i = 0; i < st.length; i++) if (L.st[i] && L.st[i].d) c++;
+  h += '<div class="card"><div class="ttl">改變觀念八大步驟　' + c + '/8</div><p class="muted" style="margin:4px 0 0">改變觀念就改變生命，改變生命就改變生活。講稿只是第一步。</p><div class="bar"><i style="width:' + (c * 12.5) + '%"></i></div></div>';
+  for (i = 0; i < st.length; i++) {
+    var v = L.st[i] || {};
+    h += '<div class="card"><label class="ck"><input type="checkbox" ' + (v.d ? 'checked' : '') + ' onchange="setStep(' + n + ',' + i + ',this.checked)"><span><b>' + esc(st[i][0]) + '</b><br><span class="muted">' + il(st[i][1]) + '</span></span></label><span class="fl">' + il(st[i][2]) + '</span><textarea placeholder="寫下你的回應" onchange="setStepT(' + n + ',' + i + ',this.value)">' + esc(v.t || '') + '</textarea></div>';
+  }
+  h += '<div class="btns"><button class="btn" onclick="go(\'les/' + n + '/work\')">下一步：實作 ›</button></div>';
+  $('lbody').innerHTML = h;
+}
+function setStep(n, i, v) { var L = S.les[n]; L.st[i] = L.st[i] || {}; L.st[i].d = v ? 1 : 0; save(); renderSteps(n); }
+function setStepT(n, i, v) { var L = S.les[n]; L.st[i] = L.st[i] || {}; L.st[i].t = v; save(); }
+function renderWork(n) {
+  var d = les(n), L = S.les[n], h = '<div class="card"><div class="ttl">本課實作（完成才算修完第' + n + '課）</div>', i;
+  for (i = 0; i < d.tasks.length; i++) h += '<label class="ck"><input type="checkbox" ' + (L.tk[i] ? 'checked' : '') + ' onchange="setTask(' + n + ',' + i + ',this.checked)"><span>' + il(d.tasks[i]) + '</span></label>';
+  var link = { 1: ['t/home', '到「我的小家」填寫'], 2: ['chat', '問小智：幫我看看作業的三段'], 3: ['t/home', '到「我的小家」問候家人'], 4: ['t/home', '到「我的小家」寫下同伴'], 5: ['t/log', '到「生命成長日誌」'], 6: ['t/teach', '到「教給一個人」'] }[n];
+  h += '<div class="btns"><button class="btn alt" onclick="go(\'' + link[0] + '\')">' + link[1] + ' ›</button></div></div><div class="card"><div class="ttl">檢討表</div>';
+  for (i = 0; i < d.refl.length; i++) h += '<span class="fl">' + il(d.refl[i]) + '</span><textarea onchange="setRefl(' + n + ',' + i + ',this.value)">' + esc(L.rf[i] || '') + '</textarea>';
+  h += '</div>';
+  var all = tasksDone(n) === d.tasks.length, hasR = false;
+  for (i in L.rf) if (L.rf[i]) hasR = true;
+  if (L.done) h += '<div class="okbox">✓ 第' + n + '課已完成。願主使你所學的，成為你所活的。</div><div class="btns"><button class="btn alt" onclick="setDone(' + n + ',0)">取消完成</button>' + (n < NLES ? '<button class="btn" onclick="go(\'les/' + (n + 1) + '\')">前往第' + (n + 1) + '課 ›</button>' : '<button class="btn" onclick="go(\'intern\')">查看完成條件 ›</button>') + '</div>';
+  else h += '<div class="btns"><button class="btn" ' + (all && hasR ? '' : 'disabled') + ' onclick="setDone(' + n + ',1)">完成第' + n + '課</button></div><p class="muted">勾完所有實作任務，並至少回答一題檢討，就可以完成本課。</p>';
+  $('lbody').innerHTML = h;
+}
+function setTask(n, i, v) { S.les[n].tk[i] = v ? 1 : 0; save(); renderWork(n); }
+function setRefl(n, i, v) { S.les[n].rf[i] = v; save(); renderWork(n); }
+function setDone(n, v) { S.les[n].done = v; save(); if (v) toast('第' + n + '課完成！榮耀歸給神'); renderWork(n); }
+
+/* ---------- 一學期見習 ---------- */
+function renderIntern() {
+  var lc = lesCount(), o = S.int, h = topbar('完成條件', 'home');
+  function row(label, ok, v, to) { return '<div class="row" style="padding:8px 0;border-bottom:1px solid #eee;cursor:pointer" onclick="go(\'' + to + '\')"><div class="grow"><b>' + label + '</b></div><span class="chip' + (ok ? ' ok' : '') + '">' + v + (ok ? ' ✓' : '') + '</span></div>'; }
+  h += '<div class="card"><div class="ttl">《' + COURSE + '》完成條件（建議）</div>' + row('六課實作', lc === NLES, lc + '/6', 'home') + row('預備期四週', prepOk(), prepOk() ? '完成' : '進行中', 't/prep') + row('見證本至少一則', S.wit.length >= 1, S.wit.length, 't/wit') + '</div>';
+  h += '<div class="card"><div class="ttl">小家長確認</div><label class="ck"><input type="checkbox" ' + (o.ok ? 'checked' : '') + ' onchange="S.int.ok=this.checked?1:0;S.int.d=this.checked?today():\'\';S.int.by=S.fam.ld||\'\';save();rerender()"><span>小家長已確認我完成學員必讀（請由小家長本人勾選）' + (o.ok ? '　<span class="muted">' + esc(o.d) + '</span>' : '') + '</span></label><div class="btns"><button class="btn" onclick="copyTxt(summary())">複製學習摘要給小家長</button></div></div>';
+  if (credit()) h += '<div class="btns"><button class="btn" onclick="go(\'cert\')">🎓 查看完成證明</button></div>';
+  $('app').innerHTML = h;
+}
+/* ---------- 設定・備份 ---------- */
+function renderSet() {
+  var h = topbar('設定・備份', 'home');
+  h += profileCard();
+  h += '<div class="card"><div class="ttl">閱讀</div><span class="fl">字級 ' + S.set.fs + 'px</span><input type="range" min="15" max="26" value="' + S.set.fs + '" oninput="S.set.fs=+this.value;save();document.documentElement.style.setProperty(\'--fs\',this.value+\'px\')" style="width:100%"><span class="fl">朗讀聲音</span><select onchange="S.set.voice=+this.value;save()">' + VOICES.map(function (v, i) { return '<option value="' + i + '"' + (i === S.set.voice ? ' selected' : '') + '>' + v.n + '</option>'; }).join('') + '</select><span class="fl">朗讀速度</span><select onchange="S.set.rate=+this.value;save()">' + [['0.85', '慢'], ['1', '正常'], ['1.15', '快']].map(function (x) { return '<option value="' + x[0] + '"' + (+x[0] === S.set.rate ? ' selected' : '') + '>' + x[1] + '</option>'; }).join('') + '</select></div>';
+  h += '<div class="card"><div class="ttl">學習摘要</div><p class="muted">產生給小家長的學習摘要（不含日誌、見證內容與家人代禱）。</p><div class="btns"><button class="btn" onclick="copyTxt(summary())">複製摘要</button>' + (navigator.share ? '<button class="btn alt" onclick="navigator.share({text:summary()})">分享</button>' : '') + '</div></div>';
+  h += '<div class="card"><div class="ttl">備份與換手機</div><p class="muted">資料只存在這支手機。換手機前請先匯出備份碼，在新手機匯入。</p><div class="btns"><button class="btn" onclick="exportData()">匯出備份碼</button><button class="btn alt" onclick="importData()">匯入備份碼</button></div></div>';
+  h += '<div class="card"><div class="ttl">關於</div><p class="muted">' + COURSE + ' v' + VER + '・321學神院<br>耶穌是我的榜樣・聖經是我的準則・聖靈是我的引導</p><div class="btns"><button class="btn alt" onclick="checkNewVer(true)">檢查更新</button><button class="btn warn" onclick="resetAll()">清除所有資料</button></div></div>';
+  $('app').innerHTML = h;
+}
+function summary() {
+  var t = '【' + COURSE + '・學習摘要】\n' + (S.pf.name ? '學員：' + S.pf.name + (S.fam.g ? '（小家 ' + S.fam.g + '）' : '') + '\n' : '') + '六課：' + lesCount() + '/6\n', n;
+  for (n = 1; n <= NLES; n++) t += '・' + les(n).title + '：' + (lesDone(n) ? '完成' : '實作 ' + tasksDone(n) + '/' + les(n).tasks.length) + '\n';
+  return t + '預備期四週：' + (prepOk() ? '完成' : '進行中') + '\n見證本：' + S.wit.length + ' 則\n教給一個人：' + S.teach.length + ' 次\n小家長確認：' + (S.int.ok ? '✓ ' + S.int.d : '尚未');
+}
+function exportData() {
+  var code = '';
+  try { code = btoa(unescape(encodeURIComponent(JSON.stringify(S)))); } catch (e) { }
+  sheet('<b>備份碼</b><p class="muted">請整段複製，存到安全的地方。備份碼含你的日誌與見證，請勿傳給別人。</p><textarea id="bk" style="min-height:160px">' + esc(code) + '</textarea><div class="btns"><button class="btn" onclick="copyTxt($(\'bk\').value)">複製</button><button class="btn alt" onclick="closeSheet()">關閉</button></div>');
+}
+function importData() { sheet('<b>匯入備份碼</b><div class="warnbox">匯入會覆蓋這支手機目前的資料。</div><textarea id="bk" style="min-height:160px"></textarea><div class="btns"><button class="btn" onclick="doImport()">匯入</button><button class="btn alt" onclick="closeSheet()">取消</button></div>'); }
+function doImport() { try { var o = JSON.parse(decodeURIComponent(escape(atob($('bk').value.trim())))); S = fix(o); HLS = S.hls; CHAT = S.chat; FAV = S.fav; save(); closeSheet(); toast('匯入完成'); go('home'); render(); } catch (e) { toast('備份碼無法讀取'); } }
+function resetAll() { if (!confirm('確定清除這支手機上的所有學習資料？此動作無法復原。')) return; var a = S.auth; S = fix({}); S.auth = a; HLS = S.hls; CHAT = S.chat; FAV = S.fav; save(); go('home'); render(); }
+
+function renderCert() {
+  if (!credit()) { go('home'); return; }
+  if (!S.cert.d) { S.cert.d = today(); save(); }
+  var h = topbar('完成證明', 'home');
+  h += '<div class="card cert"><div class="muted">321 學神院</div><h2>學員必讀完成證明</h2><p>茲證明</p><input type="text" value="' + esc(S.cert.name || S.pf.name) + '" placeholder="請輸入姓名" onchange="S.cert.name=this.value;save()" style="text-align:center;font-size:1.2em;font-weight:700;max-width:280px"><p>已修畢《' + COURSE + '》六課，<br>走完新生預備期四週，<br>成為321學神院的學員、235 學習小家的家人。</p><p class="muted">小家長：' + esc(S.int.by || S.fam.ld || '—') + '　日期：' + esc(S.cert.d) + '</p><p style="font-size:.9em">「這樣，你們不再作外人和客旅，是與聖徒同國，是神家裡的人了。」<br>（以弗所書 2:19）</p></div><div class="btns"><button class="btn" onclick="window.print()">列印／存成 PDF</button></div>';
+  $('app').innerHTML = h;
+}
+
+/* ======================================================================
+   321學神院 連動：身分碼、學期週次、週報（與學神院 App 相同演算法與格式）
+   ====================================================================== */
+var SXY = {
+  termStart: '', weeks: 12,
+  codes: { leader: '3efab731', ta: '210ab38a', head: 'e33e674d' },
+  url: 'https://spch321-sudo.github.io/321seminary/'
+};
+var ROLE_NAME = { leader: '小家長', ta: '助教', head: '負責人', student: '學員' };
+var FLOW = [[5, '安靜尋求', '焦點是否在耶穌？'], [10, '簽到與近況', '每個人有沒有被看見？'], [30, '一起看聽課程', '技術順不順？大家有沒有專注？'], [30, '討論分享', '討論三題有沒有打到水？誰沒有開口？'], [10, '本週行動', '行動是否具體可行？'], [5, '代禱與祝福', '是否彼此代禱？']];
+
+
+function fnv(str) { var h = 0x811c9dc5; str = unescape(encodeURIComponent('321|' + str)); for (var i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = (h + ((h << 1) + (h << 4) + (h << 7) + (h << 8) + (h << 24))) >>> 0; } return ('0000000' + h.toString(16)).slice(-8); }
+function roleOfCode(c) { var x = fnv(String(c || '').trim().toUpperCase()), k; for (k in SXY.codes) if (SXY.codes[k] === x) return k; return ''; }
+function termStart() { return S.pf.term || SXY.termStart; }
+function pd(s) { var a = s.split('-'); return new Date(+a[0], +a[1] - 1, +a[2]); }
+function hasTerm() { return !!termStart(); }
+function rawWeek() { if (!hasTerm()) return S.pf.cw || 1; return Math.floor((new Date() - pd(termStart())) / 6048e5) + 1; }
+function curWeek() { return Math.max(1, Math.min(SXY.weeks, rawWeek())); }
+function weekLabel() { var r = rawWeek(); if (!hasTerm()) return '第 ' + curWeek() + ' 週'; if (r < 1) return '尚未開學'; if (r > SXY.weeks) return '學期已結束'; return '第 ' + r + ' 週'; }
+function weekDates(w) { if (!hasTerm()) return ''; var d = pd(termStart()); d.setDate(d.getDate() + (w - 1) * 7); var e = new Date(d); e.setDate(e.getDate() + 6); return (d.getMonth() + 1) + '/' + d.getDate() + '–' + (e.getMonth() + 1) + '/' + e.getDate(); }
+function enc(o) { return '#321R1:' + btoa(unescape(encodeURIComponent(JSON.stringify(o)))); }
+function decAll(text) { var out = [], re = /#321R1:([A-Za-z0-9+\/=]+)/g, m; while ((m = re.exec(text))) { try { out.push(JSON.parse(decodeURIComponent(escape(atob(m[1]))))); } catch (e) { } } return out; }
+function weekOpts(sel, fn) { var cw = curWeek(), h = '<select onchange="' + fn + '(+this.value)">', i; for (i = cw; i >= 1; i--) h += '<option value="' + i + '"' + (i === sel ? ' selected' : '') + '>第 ' + i + ' 週' + (hasTerm() ? '（' + weekDates(i) + '）' : '') + '</option>'; return h + '</select>'; }
+function gcode(s) { return String(s || '').toUpperCase().replace(/\s/g, ''); }
+
+function profileCard() {
+  var p = S.pf;
+  return '<div class="card"><div class="ttl">我的身分</div><span class="fl">我的姓名</span><input type="text" value="' + esc(p.name) + '" onchange="S.pf.name=this.value;save()"><span class="fl">開課日期（第 1 週的星期一；學神院公布後再填）</span><input type="date" value="' + esc(p.term) + '" onchange="S.pf.term=this.value;save();rerender()">' + (p.term ? '' : '<span class="fl">目前是第幾週（開課日期未定時手動設定）</span><select onchange="S.pf.cw=+this.value;save();rerender()">' + (function () { var o = '', k; for (k = 1; k <= SXY.weeks; k++) o += '<option value="' + k + '"' + (k === (p.cw || 1) ? ' selected' : '') + '>第 ' + k + ' 週</option>'; return o; })() + '</select>') + '</div>';
+}
+
+
+/* ======================================================================
+   學員工具：預備期四週、我的小家、生命成長日誌、見證本、教給一個人
+   ====================================================================== */
+function renderTool(t) {
+  var f = { prep: tPrep, home: tHome, log: tLog, wit: tWit, teach: tTeach }[t];
+  if (f) f(); else go('home');
+}
+function delFrom(k, id) { if (!confirm('確定刪除？')) return; S[k] = S[k].filter(function (x) { return x.id !== id; }); save(); closeSheet(); rerender(); }
+function byId(k, id) { for (var i = 0; i < S[k].length; i++) if (S[k][i].id === id) return S[k][i]; return null; }
+
+/* ---------- 預備期四週 ---------- */
+var PREP = [
+  ['第 1 週・認識我的小家', ['在「我的小家」填好小家代碼、小家長與聚會時段', '在學神院 App 完成個人設定（姓名、小家代碼）', '第一次聚會：用一兩句話真實地介紹自己', '讀完第1課〈我是誰〉']],
+  ['第 2 週・遇見我的同伴', ['知道我的 2 同伴是誰，在「我的小家」寫下', '與同伴第一次互問四句（我先說自己的）', '讀完第2課〈學習的主人是我〉', '聚會中用「我」開頭分享一次']],
+  ['第 3 週・第一份作業', ['在聚會中輸入簽到碼', '用三段式寫第一份作業：看見、問題、行動', '把「我的行動」告訴同伴', '讀完第3課〈在小家中作家人〉']],
+  ['第 4 週・第一次自省', ['在學神院 App 填第一次 920 生命自省', '在「生命成長日誌」寫下一句：神這週在我身上做了什麼', '送出第一份個人週報給小家長', '讀完第4課〈2 同伴〉']]
+];
+function prepDone(w) { var P = S.prep[w] || {}, c = 0, i; for (i = 0; i < 4; i++) if (P[i]) c++; return c; }
+function prepAtt() { var c = 0, w; for (w = 1; w <= 4; w++) if ((S.prep[w] || {}).att) c++; return c; }
+function prepOk() { var w; for (w = 1; w <= 4; w++) if (prepDone(w) < 4) return false; return prepAtt() >= 3; }
+function tPrep() {
+  var h = topbar('預備期四週', 'home'), w, i, a = prepAtt();
+  h += '<div class="card"><div class="ttl">新生前 4 週是預備期</div><p class="muted" style="margin:4px 0">出席 3 次以上就轉為正式學員。每週只有四個小任務，一週一週走，不必急。</p><div class="chips"><span class="chip' + (a >= 3 ? ' ok' : '') + '">出席 ' + a + '/4</span>' + (prepOk() ? '<span class="chip ok">預備期完成 ✓</span>' : '') + '</div></div>';
+  for (w = 1; w <= 4; w++) {
+    var P = S.prep[w] = S.prep[w] || {}, d = prepDone(w);
+    h += '<div class="card"><div class="row"><div class="grow"><div class="ttl">' + PREP[w - 1][0] + '</div></div><span class="chip' + (d === 4 ? ' ok' : '') + '">' + d + '/4</span></div>';
+    h += '<label class="ck"><input type="checkbox" ' + (P.att ? 'checked' : '') + ' onchange="S.prep[' + w + '].att=this.checked?1:0;save();rerender()"><span><b>這週我出席了小家聚會</b></span></label>';
+    for (i = 0; i < 4; i++) h += '<label class="ck"><input type="checkbox" ' + (P[i] ? 'checked' : '') + ' onchange="S.prep[' + w + '][' + i + ']=this.checked?1:0;save();rerender()"><span>' + esc(PREP[w - 1][1][i]) + '</span></label>';
+    h += '</div>';
+  }
+  h += '<div class="btns"><button class="btn" onclick="copyTxt(prepText())">複製進度給小家長</button></div>';
+  if (prepOk()) h += '<div class="okbox">恭喜你走完預備期！「你們不再作外人和客旅，是神家裡的人了。」（以弗所書 2:19）</div>';
+  $('app').innerHTML = h;
+}
+function prepText() {
+  var t = '【321學神院・預備期進度】\n' + (S.pf.name ? S.pf.name + (S.fam.g ? '（小家 ' + S.fam.g + '）' : '') + '\n' : ''), w;
+  for (w = 1; w <= 4; w++) t += PREP[w - 1][0] + '：任務 ' + prepDone(w) + '/4' + ((S.prep[w] || {}).att ? '・出席 ✓' : '') + '\n';
+  return t + (prepOk() ? '預備期完成，謝謝小家長一路陪伴！' : '謝謝你陪我走這一段。');
+}
+
+/* ---------- 我的小家 ---------- */
+var HELP = [['課程內容不懂', '同伴與小家討論', '小家長', '助教 → 教務組'], ['App 操作', '資料中心常見問題', '小家長', '資訊組'], ['請假補課', '小家長', '助教', '學務組'], ['個人與家庭困難', '同伴代禱', '小家長', '助教 → 關懷組'], ['人際衝突', '當事人私下溝通', '小家長', '助教 → 負責人團隊']];
+var ROLES_S = ['', '代禱守望', '迎新聯絡', '關懷缺席', '技術小幫手', '時間守望'];
+function tHome() {
+  var f = S.fam, h = topbar('我的小家', 'home'), i;
+  function fld(k, label, ph) { return '<span class="fl">' + label + '</span><input type="text" value="' + esc(f[k] || '') + '" placeholder="' + (ph || '') + '" onchange="S.fam.' + k + '=this.value;save()">'; }
+  h += '<div class="card"><div class="ttl">我的 235 小家</div>' + fld('g', '小家代碼（與學神院 App 相同）', '例如 TW-A1') + fld('ld', '小家長') + fld('ta', '助教') + fld('bd', '我的 2 同伴') + fld('bt', '與同伴聯絡的時段', '例如 週四晚上 9 點') + fld('mt', '小家聚會時段') + '<span class="fl">我在小家承擔的角色</span><select onchange="S.fam.role=this.value;save()">' + opts(ROLES_S, f.role || '') + '</select></div>';
+  h += '<div class="card"><div class="ttl">互問四句</div><ol style="margin:4px 0">' + ['這週你與神的關係如何？', '這週「有己」在哪裡醒來？', '上週定的行動落實了嗎？', '我可以怎樣為你禱告？'].map(function (q) { return '<li>' + q + '</li>'; }).join('') + '</ol><p class="muted" style="margin:4px 0">謙卑對謙卑：只問自己的問題，不指責對方的問題。</p><div class="btns"><button class="btn alt" onclick="rpBuddy()">💬 請小智扮演同伴練習</button></div></div>';
+  h += '<div class="card"><div class="ttl">我的家人・代禱</div><p class="muted" style="margin:4px 0">只存在這支手機；守住小家分享的保密，只寫稱呼與代禱，不寫細節。</p>';
+  for (i = 0; i < S.kin.length; i++) { var k = S.kin[i]; h += '<div class="row" style="padding:6px 0;border-bottom:1px solid #eee"><div class="grow"><b>' + esc(k.n) + '</b>' + (k.p ? '<br><span class="muted">🙏 ' + esc(k.p) + '</span>' : '') + '</div><button class="back" onclick="editKin(\'' + k.id + '\')">編輯</button></div>'; }
+  h += '<div class="btns"><button class="btn alt" onclick="editKin()">＋ 新增家人</button><button class="btn alt" onclick="copyTxt(\'平安！想問候你一下：這週還好嗎？我可以怎樣為你禱告？\')">複製問候訊息</button></div></div>';
+  h += '<div class="card"><div class="ttl">遇到問題找誰</div><div class="tw"><table><tr><th>問題</th><th>第一步</th><th>第二步</th><th>第三步</th></tr>' + HELP.map(function (r) { return '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td><td>' + r[2] + '</td><td>' + r[3] + '</td></tr>'; }).join('') + '</table></div><p class="muted">逐級而上；緊急危難（人身安全、重大變故）可直接聯絡學神院關懷組。</p></div>';
+  h += '<div class="card"><div class="ttl">團契公約</div><ol style="margin:4px 0"><li>保密：小家中的個人分享不外傳。</li><li>不論斷、不教導、不爭辯：分享時用「我」開頭。</li><li>不推銷、不借貸、不拉政治立場。</li></ol></div>';
+  $('app').innerHTML = h;
+}
+function editKin(id) {
+  var k = byId('kin', id) || { id: '', n: '', p: '' };
+  sheet('<b>' + (id ? '編輯家人' : '新增家人') + '</b><span class="fl">稱呼</span><input type="text" id="kn" value="' + esc(k.n) + '"><span class="fl">代禱事項（只寫需要，不寫細節）</span><textarea id="kp">' + esc(k.p) + '</textarea><div class="btns"><button class="btn" onclick="saveKin(\'' + (id || '') + '\')">儲存</button>' + (id ? '<button class="btn warn" onclick="delFrom(\'kin\',\'' + id + '\')">刪除</button>' : '') + '<button class="btn alt" onclick="closeSheet()">取消</button></div>');
+}
+function saveKin(id) { var n = $('kn').value.trim(); if (!n) return; var k = byId('kin', id); if (!k) { k = { id: uid() }; S.kin.push(k); } k.n = n; k.p = $('kp').value; save(); closeSheet(); rerender(); }
+function rpBuddy() {
+  RP = { title: '對練：與同伴互問四句', busy: false, msgs: [], sys: SYS_ZH + '\n\n現在請進行角色扮演。請你扮演一位 321學神院學員的 2 同伴，這週工作很累、有點灰心，一開始回答得很簡短。只有當對方先說出自己的軟弱、用謙卑而不是審問的口氣問你，你才慢慢說出真正的掙扎。只用同伴的口吻回應，每次不超過 80 字，不要跳出角色。當對方輸入「回饋」時，請跳出角色，依照「謙卑對謙卑、只問自己的問題、先關心人」評估對方的問責，並提供一個更好的說法。' };
+  drawRP(); toast('你先開口，向同伴問候');
+}
+
+/* ---------- 生命成長日誌 ---------- */
+var FRUITS = ['仁愛', '喜樂', '和平', '忍耐', '恩慈', '良善', '信實', '溫柔', '節制'];
+function tLog() {
+  var h = topbar('生命成長日誌', 'home'), i, list = S.log.slice().sort(function (a, b) { return a.w === b.w ? (a.d < b.d ? 1 : -1) : b.w - a.w; });
+  h += '<div class="card"><div class="ttl">每週一句：神這週在我身上做了什麼？</div><p class="muted" style="margin:4px 0">只存在這支手機，不會進入任何週報。九果分數可從學神院 App 的 920 自省照著填，也可以不填。</p><div class="btns"><button class="btn" onclick="editLog()">＋ 寫本週日誌</button></div></div>';
+  var sc = list.filter(function (x) { return x.f && x.f.length === 9; });
+  if (sc.length) {
+    h += '<div class="card"><div class="ttl">九果趨勢</div><div class="tw"><table><tr><th>週</th>' + FRUITS.map(function (f) { return '<th>' + f.slice(0, 1) + '</th>'; }).join('') + '<th>平均</th></tr>';
+    sc.slice().reverse().forEach(function (x) { var s = 0; x.f.forEach(function (v) { s += v; }); h += '<tr><td>' + x.w + '</td>' + x.f.map(function (v) { return '<td>' + v + '</td>'; }).join('') + '<td><b>' + (s / 9).toFixed(1) + '</b></td></tr>'; });
+    h += '</table></div><p class="muted">看趨勢，不看單週；只與昨天的自己比。</p></div>';
+  }
+  for (i = 0; i < list.length; i++) { var x = list[i]; h += '<div class="card"><div class="row"><div class="grow"><div class="ttl">第 ' + x.w + ' 週</div></div><button class="back" onclick="editLog(\'' + x.id + '\')">編輯</button></div>' + (x.line ? '<p style="margin:4px 0">' + esc(x.line) + '</p>' : '') + (x.self ? '<p class="muted" style="margin:4px 0">有己醒來：' + esc(x.self) + '</p>' : '') + (x.th ? '<p class="muted" style="margin:4px 0">感恩：' + esc(x.th) + '</p>' : '') + '<div class="btns" style="margin-top:6px"><button class="btn alt" onclick="toWit(\'' + x.id + '\')">這是一個改變 → 記進見證本</button></div></div>'; }
+  h += '<div class="card"><div class="ttl">貼上學神院 App 的個人週報</div><p class="muted">會帶入那一週的本週行動與感恩。</p><textarea id="paste"></textarea><button class="btn" onclick="importP()">帶入</button></div>';
+  $('app').innerHTML = h;
+}
+function editLog(id) {
+  var x = byId('log', id) || { id: '', w: curWeek(), line: '', self: '', th: '', act: '', f: null }, fs = '', i;
+  for (i = 0; i < 9; i++) fs += '<label style="display:inline-block;margin:4px 8px 4px 0">' + FRUITS[i] + ' <select class="lf"><option value="">—</option>' + [1, 2, 3, 4, 5].map(function (v) { return '<option' + (x.f && x.f[i] === v ? ' selected' : '') + '>' + v + '</option>'; }).join('') + '</select></label>';
+  sheet('<b>生命成長日誌</b><span class="fl">第幾週</span><input type="number" id="lw" min="1" max="12" value="' + esc(x.w) + '"><span class="fl">神這週在我身上做了什麼？（一句話）</span><textarea id="ll">' + esc(x.line) + '</textarea><span class="fl">這週「有己」醒來的時刻</span><textarea id="ls">' + esc(x.self) + '</textarea><span class="fl">本週行動</span><input type="text" id="la" value="' + esc(x.act || '') + '"><span class="fl">一項感恩</span><input type="text" id="lt" value="' + esc(x.th) + '"><span class="fl">九果自評（可不填）</span><div>' + fs + '</div><div class="btns"><button class="btn" onclick="saveLog(\'' + (id || '') + '\')">儲存</button>' + (id ? '<button class="btn warn" onclick="delFrom(\'log\',\'' + id + '\')">刪除</button>' : '') + '<button class="btn alt" onclick="closeSheet()">取消</button></div>');
+}
+function saveLog(id) {
+  var x = byId('log', id); if (!x) { x = { id: uid(), d: today() }; S.log.push(x); }
+  var f = [], a = document.querySelectorAll('.lf'), i, full = true;
+  for (i = 0; i < a.length; i++) { if (!a[i].value) full = false; f.push(+a[i].value); }
+  x.w = +$('lw').value || curWeek(); x.line = $('ll').value; x.self = $('ls').value; x.act = $('la').value; x.th = $('lt').value; x.f = full ? f : null;
+  save(); closeSheet(); toast('已記下，願主繼續在你裡面動工'); rerender();
+}
+function importP() {
+  var arr = decAll($('paste').value).filter(function (o) { return o.t === 'P'; });
+  if (!arr.length) { toast('找不到可辨識的個人週報代碼'); return; }
+  arr.forEach(function (o) { var x = S.log.filter(function (y) { return y.w === o.w; })[0]; if (!x) { x = { id: uid(), d: today(), w: o.w, line: '', self: '', th: '', act: '', f: null }; S.log.push(x); } if (o.a) x.act = o.a; if (o.th) x.th = o.th; });
+  save(); toast('已帶入 ' + arr.length + ' 週'); rerender();
+}
+
+/* ---------- 見證本 ---------- */
+var AREAS = ['觀念', '生命', '生活', '關係', '事工'];
+function tWit() {
+  var h = topbar('見證本', 'home'), i, list = S.wit.slice().sort(function (a, b) { return a.d < b.d ? 1 : -1; });
+  h += '<div class="card"><div class="ttl">由內而外五重的改變</div><p class="muted" style="margin:4px 0">觀念、生命、生活、關係、事工。每一次看見神改變你，就記下來；結業時，這些就是你的結業見證。</p><div class="chips">' + AREAS.map(function (a) { var n = S.wit.filter(function (x) { return x.a === a; }).length; return '<span class="chip' + (n ? ' ok' : '') + '">' + a + ' ' + n + '</span>'; }).join('') + '</div><div class="btns"><button class="btn" onclick="editWit()">＋ 記下一個改變</button>' + (S.wit.length ? '<button class="btn alt" onclick="witDraft()">產生結業見證草稿</button>' : '') + '</div></div>';
+  for (i = 0; i < list.length; i++) { var x = list[i]; h += '<div class="card"><div class="row"><div class="grow"><div class="ttl">' + esc(x.d) + '</div><div class="chips"><span class="chip">' + esc(x.a) + '</span></div></div><button class="back" onclick="editWit(\'' + x.id + '\')">編輯</button></div><p style="margin:6px 0 0">' + esc(x.t) + '</p></div>'; }
+  if (!list.length) h += '<p class="muted">還沒有見證。從一個小小的改變開始記。</p>';
+  $('app').innerHTML = h;
+}
+function editWit(id, pre) {
+  var x = byId('wit', id) || { id: '', d: today(), a: '生命', t: pre || '' };
+  sheet('<b>記下一個改變</b><span class="fl">日期</span><input type="date" id="wd" value="' + esc(x.d) + '"><span class="fl">哪一重改變</span><select id="wa">' + opts(AREAS, x.a) + '</select><span class="fl">以前我…，現在…，是神…</span><textarea id="wt" rows="5">' + esc(x.t) + '</textarea><div class="btns"><button class="btn" onclick="saveWit(\'' + (id || '') + '\')">儲存</button>' + (id ? '<button class="btn warn" onclick="delFrom(\'wit\',\'' + id + '\')">刪除</button>' : '') + '<button class="btn alt" onclick="closeSheet()">取消</button></div>');
+}
+function saveWit(id) { var t = $('wt').value.trim(); if (!t) return; var x = byId('wit', id); if (!x) { x = { id: uid() }; S.wit.push(x); } x.d = $('wd').value; x.a = $('wa').value; x.t = t; save(); closeSheet(); toast('榮耀歸給神'); rerender(); }
+function toWit(lid) { var l = byId('log', lid); go('t/wit'); setTimeout(function () { editWit('', l ? (l.line || '') : ''); }, 50); }
+function witDraft() {
+  var t = '【我的見證】\n' + (S.pf.name ? S.pf.name + '\n' : '') + '\n感謝主，把我帶進321學神院，也帶進一個 235 小家。這段日子，神在我身上做了這些事：\n';
+  AREAS.forEach(function (a) { var xs = S.wit.filter(function (x) { return x.a === a; }).sort(function (p, q) { return p.d < q.d ? -1 : 1; }); if (xs.length) { t += '\n【' + a + '的改變】\n'; xs.forEach(function (x) { t += '・' + x.t + '\n'; }); } });
+  t += '\n這一切都是神的恩典。願一切的榮耀歸給主耶穌。';
+  sheet('<b>結業見證草稿</b><p class="muted">這是依你的見證本整理的草稿，請再用自己的話修改。</p><textarea id="wdft" style="min-height:260px">' + esc(t) + '</textarea><div class="btns"><button class="btn" onclick="copyTxt($(\'wdft\').value)">複製</button><button class="btn alt" onclick="witAI()">✨ 請小智幫我潤飾</button><button class="btn alt" onclick="closeSheet()">關閉</button></div><div id="wai"></div>');
+}
+function witAI() {
+  var t = $('wdft').value; $('wai').innerHTML = '<p class="muted">' + THINKING + '</p>';
+  chatReq(SYS_ZH + '\n\n請協助一位 321學神院學員，把他的見證條列整理成一篇約 600 字、第一人稱、真誠自然的見證。保留他寫的每一個事實，不要編造任何沒寫到的經歷；可以依「觀念、生命、生活、關係、事工」由內而外的次序串起來，最後把榮耀歸給主耶穌。不要加標題以外的裝飾。', [{ role: 'user', content: t }], function (r, d, why) {
+    var o = $('wai'); if (!o) return;
+    o.innerHTML = r ? '<div class="okbox" style="white-space:pre-wrap">' + esc(r) + '</div><div class="btns"><button class="btn alt" id="wcp">複製小智的版本</button></div>' : '<div class="warnbox">小智暫時連不上，請確認網路後再試一次。</div>';
+    var b = $('wcp'); if (b) b.onclick = function () { copyTxt(r); };
+  });
+}
+
+/* ---------- 教給一個人 ---------- */
+function tTeach() {
+  var h = topbar('教給一個人', 'home'), i, list = S.teach.slice().sort(function (a, b) { return a.d < b.d ? 1 : -1; });
+  h += '<div class="card"><div class="ttl">八大步驟的第八步：繁殖</div><p style="margin:4px 0">「你在許多見證人面前聽見我所教訓的，也要交託那忠心能教導別人的人。」（提摩太後書 2:2）</p><div class="chips"><span class="chip' + (list.length ? ' ok' : '') + '">已教給 ' + list.length + ' 次</span></div><div class="btns"><button class="btn" onclick="editTeach()">＋ 記下一次</button></div></div>';
+  for (i = 0; i < list.length; i++) { var x = list[i]; h += '<div class="card"><div class="row"><div class="grow"><div class="ttl">' + esc(x.d) + '　' + esc(x.who) + '</div></div><button class="back" onclick="editTeach(\'' + x.id + '\')">編輯</button></div><p style="margin:6px 0 0">' + esc(x.what) + '</p>' + (x.note ? '<p class="muted" style="margin:4px 0 0">我學到：' + esc(x.note) + '</p>' : '') + '</div>'; }
+  if (!list.length) h += '<p class="muted">可以很簡單：把互問四句教給一位朋友，或把一句觸動你的經文分享給家人。</p>';
+  $('app').innerHTML = h;
+}
+function editTeach(id) {
+  var x = byId('teach', id) || { id: '', d: today(), who: '', what: '', note: '' };
+  sheet('<b>教給一個人</b><span class="fl">日期</span><input type="date" id="td" value="' + esc(x.d) + '"><span class="fl">教給誰（稱呼即可）</span><input type="text" id="tw" value="' + esc(x.who) + '"><span class="fl">教了什麼</span><textarea id="tt">' + esc(x.what) + '</textarea><span class="fl">教的時候，我自己學到什麼</span><textarea id="tn">' + esc(x.note) + '</textarea><div class="btns"><button class="btn" onclick="saveTeach(\'' + (id || '') + '\')">儲存</button>' + (id ? '<button class="btn warn" onclick="delFrom(\'teach\',\'' + id + '\')">刪除</button>' : '') + '<button class="btn alt" onclick="closeSheet()">取消</button></div>');
+}
+function saveTeach(id) { var w = $('tw').value.trim(); if (!w) { toast('請寫下對象'); return; } var x = byId('teach', id); if (!x) { x = { id: uid() }; S.teach.push(x); } x.d = $('td').value; x.who = w; x.what = $('tt').value; x.note = $('tn').value; save(); closeSheet(); toast('你正在得人如得魚'); rerender(); }
+
+function renderScript(n) {
+  var d = les(n), h = '<div class="doc" id="doc">', b = 0, i, j;
+  function blk(tag, html, attr) { return '<' + tag + ' data-b="' + (b++) + '"' + (attr || '') + '>' + html + '</' + tag + '>'; }
+  function tbl(t) {
+    var s = '<div class="tw"><table><tr>', r, c;
+    for (c = 0; c < t.h.length; c++) s += '<th>' + il(t.h[c]) + '</th>';
+    s += '</tr>';
+    for (r = 0; r < t.r.length; r++) {
+      var cells = '';
+      for (c = 0; c < t.r[r].length; c++) cells += '<td>' + il(t.r[r][c]) + '</td>';
+      s += blk('tr', cells);
+    }
+    return s + '</table></div>';
+  }
+  function blocks(bs) {
+    var s = '', k, x;
+    for (k = 0; k < bs.length; k++) {
+      x = bs[k];
+      if (x.t === 'h3') s += blk('h3', il(x.x));
+      else if (x.t === 'p') s += blk('p', il(x.x));
+      else if (x.t === 'ol' || x.t === 'ul' || x.t === 'tk') { var tg = x.t === 'ol' ? 'ol' : 'ul'; s += '<' + tg + '>'; for (j = 0; j < x.i.length; j++) s += blk('li', il(x.i[j])); s += '</' + tg + '>'; }
+      else if (x.t === 'tb') s += tbl(x);
+    }
+    return s;
+  }
+  h += '<div class="card readbar"><button class="btn readbtn" id="readBtn">🔊 朗讀本課</button><span class="muted">點一句就畫線；再點一次可換顏色、寫筆記、問小智、從這句朗讀。</span></div>';
+  h += blk('p', '<b>' + il(d.lead) + '</b>');
+  h += '<div class="card info">';
+  for (i = 0; i < d.info.length; i++) h += '<b>' + esc(d.info[i][0]) + '</b>' + blk('div', il(d.info[i][1]));
+  h += '</div><p class="muted">學完這一課，你能夠：</p><ol>';
+  for (i = 0; i < d.goals.length; i++) h += blk('li', il(d.goals[i]));
+  h += '</ol>';
+  for (i = 0; i < d.secs.length; i++) { h += blk('h2', esc(d.secs[i].h)); h += blocks(d.secs[i].b); }
+  h += blk('h2', esc(d.closingH || '結語'));
+  for (i = 0; i < d.closing.length; i++) h += blk('p', il(d.closing[i]));
+  h += blk('h3', '結語禱告') + blk('p', il(d.prayer));
+  h += '</div><div class="card"><div class="btns" style="margin:0"><button class="btn alt" onclick="go(\'chat\')">💬 問小智</button><button class="btn alt" onclick="go(\'les/' + n + '/scen\')">下一步：情境模擬 ›</button></div></div>';
+  $('lbody').innerHTML = h;
+  var doc = $('doc');
+  wrapSents(doc, 'L' + n);
+  paintHl();
+  doc.onclick = function (e) { var t = e.target; while (t && t !== doc && !(t.classList && t.classList.contains('sent'))) t = t.parentNode; if (t && t !== doc) onSentTap(t); };
+  var rb = $('readBtn');
+  spk.label = '🔊 朗讀本課';
+  rb.onclick = function () { ttsToggle(doc, rb, '🔊 朗讀本課'); };
+  if (spk.on && spk.root === 'L' + n) { spk.btn = rb; ttsBtn('playing'); }
+}
+
+/* ======================================================================
+   讀經工具：畫線、小智、朗讀（移植自《321萬象見神》，ES5）
+   ====================================================================== */
+var API = { chat: AI_URL, tts: TTS_URL };
+var TTS_SIL = 140, TTS_SILC = 140, TTS_SILE = 260;
+var TTS_CHUNK = 130, TTS_LOOKAHEAD = 2, TTS_RETRY = [800, 1600], RA_COOLDOWN = 4000;
+var VOICES = [{ n: '雲哲', v: 'zh-TW-YunJheNeural' }, { n: '雲帆', v: 'zh-CN-Yunfan:DragonHDLatestNeural' }, { n: '曉辰', v: 'zh-CN-Xiaochen:DragonHDLatestNeural' }];
+function curVoice() { return (VOICES[S.set.voice || 0] || VOICES[0]).v; }
+function ttsRate() { return S.set.rate < 1 ? '-15%' : (S.set.rate > 1 ? '+15%' : '+0%'); }
+var HL_COLORS = ['gold', 'green', 'blue', 'pink', 'purple', 'maroon', 'brown', 'charcoal'];
+var HL_SWATCH = { gold: '#D9B168', green: '#6FAE71', blue: '#6C93D1', pink: '#E58FA0', purple: '#A48AC9', maroon: '#8C4A4E', brown: '#8A6740', charcoal: '#54534E' };
+var HLS = S.hls, CHAT = S.chat, FAV = S.fav, chatBusy = false, chatPending = null, chatSrc = null;
+function saveHl() { S.hls = HLS; save(); }
+function saveFav() { S.fav = FAV; save(); }
+function saveChat() { CHAT = CHAT.slice(-40); S.chat = CHAT; save(); }
+function newId() { return Date.now().toString(36) + Math.floor(Math.random() * 1296).toString(36); }
+function isFav(id) { for (var i = 0; i < FAV.length; i++) { if (FAV[i].id === id) { return i; } } return -1; }
+function qsa(sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
+
+/* ---------- 把文字切成一句一句的 span.sent ---------- */
+var SKIP = /^(BUTTON|INPUT|TEXTAREA|SCRIPT|STYLE)$/;
+var SKIPCLS = /\b(hl-note|msg-actions|msg-q)\b/;
+var BLOCKTAG = /^(P|LI|H1|H2|H3|H4|BLOCKQUOTE|DIV|TD|TH)$/;
+function pieces(text) {
+  var out = [], re = /[^。！？]*[。！？]+[」』）”]*|[^。！？]+$/g, m;
+  while ((m = re.exec(text)) !== null) { if (!m[0]) { re.lastIndex++; continue; } out.push(m[0]); }
+  return out.length ? out : [text];
+}
+function endsSent(t) { return /[。！？][」』）”]*\s*$/.test(t); }
+function wrapSents(root, prefix) {
+  if (!root) { return; }
+  qsa('[data-b]', root).forEach(function (blk) {
+    var b = blk.getAttribute('data-b'), s = 0, lastBox = null, open = false;
+    var walker = document.createTreeWalker(blk, 4, null, false), nodes = [], n;
+    while ((n = walker.nextNode())) { nodes.push(n); }
+    nodes.forEach(function (tn) {
+      if (!tn.nodeValue || !/\S/.test(tn.nodeValue)) { return; }
+      for (var p = tn.parentNode; p && p !== blk.parentNode; p = p.parentNode) {
+        if (SKIP.test(p.tagName) || (p.className && SKIPCLS.test(String(p.className)))) { return; }
+      }
+      var box = tn.parentNode; while (box !== blk && !BLOCKTAG.test(box.tagName)) { box = box.parentNode; }
+      if (box !== lastBox) { if (lastBox && open) { s++; } lastBox = box; open = false; }
+      var frag = document.createDocumentFragment();
+      pieces(tn.nodeValue).forEach(function (pc) {
+        if (!/\S/.test(pc)) { frag.appendChild(document.createTextNode(pc)); return; }
+        var sp = document.createElement('span');
+        sp.className = 'sent'; sp.setAttribute('data-k', prefix + '|' + b + '|' + s);
+        sp.textContent = pc; frag.appendChild(sp);
+        if (endsSent(pc)) { s++; open = false; } else { open = true; }
+      });
+      tn.parentNode.replaceChild(frag, tn);
+    });
+  });
+}
+function groups(root) {
+  var gs = [], idx = {};
+  qsa('.sent', root).forEach(function (el) {
+    var k = el.getAttribute('data-k');
+    if (idx[k] === undefined) { idx[k] = gs.length; gs.push({ k: k, els: [] }); }
+    gs[idx[k]].els.push(el);
+  });
+  return gs;
+}
+function gText(g) { return g.els.map(function (e) { return e.textContent; }).join('').replace(/\s+/g, ' ').replace(/^\s+|\s+$/g, ''); }
+
+/* ---------- 畫線 ---------- */
+function hlRoots() { var r = qsa('.msg-body'); if ($('doc')) { r.unshift($('doc')); } return r; }
+function rootOf(el) { while (el && el !== document.body) { if (el.id === 'doc' || (el.classList && el.classList.contains('msg-body'))) { return el; } el = el.parentNode; } return null; }
+function paintHl() { hlRoots().forEach(paintRoot); }
+function paintRoot(body) {
+  var gs = groups(body), cover = [];
+  gs.forEach(function (g, i) {
+    var h = HLS[g.k]; if (!h) { return; }
+    var n = Math.max(1, +h.sp || 1);
+    for (var d = 0; d < n && i + d < gs.length; d++) { cover[i + d] = { h: h, head: d === 0, own: g.k }; }
+  });
+  qsa('.hl-note', body).forEach(function (x) { x.parentNode.removeChild(x); });
+  gs.forEach(function (g, i) {
+    var o = cover[i];
+    g.els.forEach(function (el) {
+      if (o) { el.setAttribute('data-hl', '1'); el.setAttribute('data-color', o.h.c); el.setAttribute('data-own', o.own); }
+      else { el.removeAttribute('data-hl'); el.removeAttribute('data-color'); el.removeAttribute('data-own'); }
+    });
+  });
+  gs.forEach(function (g, i) {
+    var o = cover[i]; if (!o || !o.head || !o.h.n) { return; }
+    var last = i; while (last + 1 < gs.length && cover[last + 1] && cover[last + 1].own === o.own) { last++; }
+    var el = gs[last].els[gs[last].els.length - 1], box = el.parentNode;
+    while (box && box !== body && !/^(P|LI|H2|H3|H4|BLOCKQUOTE|TD|DIV)$/.test(box.tagName)) { box = box.parentNode; }
+    if (!box || box === body) { return; }
+    var d = document.createElement('div');
+    d.className = 'hl-note'; d.setAttribute('data-color', o.h.c); d.setAttribute('data-own', o.own);
+    d.textContent = o.h.n;
+    if (box.tagName === 'TD') { box.appendChild(d); } else { box.parentNode.insertBefore(d, box.nextSibling); }
+  });
+}
+function spanText(k, n) {
+  var first = document.querySelector('.sent[data-k="' + k + '"]');
+  var gs = groups(rootOf(first) || $('doc')), i = -1;
+  for (var j = 0; j < gs.length; j++) { if (gs[j].k === k) { i = j; break; } }
+  if (i < 0) { return { t: '', n: 1 }; }
+  n = Math.max(1, Math.min(n, gs.length - i));
+  var parts = [];
+  for (var d = 0; d < n; d++) { parts.push(gText(gs[i + d])); }
+  return { t: parts.join(''), n: n };
+}
+function onSentTap(el) {
+  var k = el.getAttribute('data-own') || el.getAttribute('data-k');
+  if (!HLS[k]) {
+    var h;
+    if (/^chat\|/.test(k)) { h = { c: S.set.hlc || 'gold', n: '', sp: 1, t: '', src: 'chat', mid: k.split('|')[1], ut: '小智的回答', ts: Date.now() }; }
+    else { h = { c: S.set.hlc || 'gold', n: '', sp: 1, t: '', les: CUR.n, ut: les(CUR.n).title, ts: Date.now() }; }
+    h.t = spanText(k, 1).t;
+    HLS[k] = h; saveHl(); paintHl();
+  } else { openHlSheet(k); }
+}
+function openHlSheet(k) {
+  var h = HLS[k]; if (!h) { return; }
+  var mask = document.createElement('div'); mask.className = 'hlsheet-mask';
+  var sw = HL_COLORS.map(function (c) { return '<button class="hlswatch' + (h.c === c ? ' active' : '') + '" data-c="' + c + '" style="background:' + HL_SWATCH[c] + '" aria-label="' + c + '"></button>'; }).join('');
+  mask.innerHTML = '<div class="hlsheet-card" role="dialog" aria-label="畫線">' +
+    '<div class="hlsheet-title">這一句</div><span class="hlsheet-quote" id="hlQuote">' + esc(h.t) + '</span>' +
+    '<div class="hlsheet-row"><span class="hlsheet-label">顏色</span><div class="hlsheet-colors">' + sw + '</div></div>' +
+    '<div class="hlsheet-row"><span class="hlsheet-label">範圍</span><div class="spanrow"><button class="spanbtn" data-sp="-1" aria-label="少畫一句">－</button><span class="spannum" id="spanNum">' + h.sp + ' 句</span><button class="spanbtn" data-sp="1" aria-label="多畫一句">＋</button></div></div>' +
+    '<p class="hl-hint">按 ＋ 往下多畫一句，可以連成一整段；問小智與朗讀都會帶整段。</p>' +
+    '<textarea class="hlsheet-ta" id="hlNote" placeholder="寫下領受……">' + esc(h.n || '') + '</textarea>' +
+    '<div class="hlsheet-acts"><button class="sbtn pri" data-a="save">儲存</button><button class="sbtn" data-a="ask">問小智</button><button class="sbtn" data-a="read">朗讀</button></div>' +
+    '<div class="hlsheet-acts">' + (h.src === 'chat' ? '' : '<button class="sbtn" data-a="from">從這句朗讀下去</button>') + '<button class="sbtn danger" data-a="del">刪除畫線</button><button class="sbtn" data-a="close">關閉</button></div></div>';
+  document.body.appendChild(mask);
+  function close() { if (mask.parentNode) { mask.parentNode.removeChild(mask); } }
+  function keepNote() { var ta = document.getElementById('hlNote'); if (ta) { h.n = ta.value.replace(/^\s+|\s+$/g, ''); } }
+  mask.addEventListener('click', function (e) {
+    var t = e.target;
+    if (t === mask) { close(); return; }
+    if (t.hasAttribute('data-c')) {
+      h.c = t.getAttribute('data-c'); S.set.hlc = h.c; saveHl(); paintHl();
+      qsa('.hlswatch', mask).forEach(function (x) { x.className = 'hlswatch' + (x === t ? ' active' : ''); });
+      return;
+    }
+    if (t.hasAttribute('data-sp')) {
+      var r = spanText(k, (h.sp || 1) + (+t.getAttribute('data-sp')));
+      h.sp = r.n; h.t = r.t; saveHl(); paintHl();
+      document.getElementById('hlQuote').textContent = h.t;
+      document.getElementById('spanNum').textContent = h.sp + ' 句';
+      return;
+    }
+    var a = t.getAttribute('data-a'); if (!a) { return; }
+    e.stopPropagation();
+    if (a === 'save') { keepNote(); saveHl(); close(); paintHl(); }
+    else if (a === 'close') { close(); }
+    else if (a === 'del') { delete HLS[k]; saveHl(); close(); paintHl(); }
+    else if (a === 'read') { keepNote(); saveHl(); close(); ttsStop(); ttsUnlock(); sayId = -1; ttsSpeakText(h.t, -1); }
+    else if (a === 'from') { keepNote(); saveHl(); close(); ttsFromKey(k); }
+    else if (a === 'ask') {
+      keepNote(); saveHl(); close();
+      chatSrc = { t: h.t, ut: h.ut };
+      chatPending = '請解釋這一段，幫助我明白它的意思，並告訴我在生活中可以怎麼應用：「' + h.t + '」';
+      go('chat');
+    }
+  });
+}
+
+/* ---------- 朗讀（Azure 真人語音，失敗改用裝置語音） ---------- */
+var TTS_FIX = [[/長老/g, '掌老'], [/長子/g, '掌子'], [/家長/g, '家掌'], [/長大/g, '掌大'], [/行為/g, '行圍'], [/為大/g, '圍大'], [/為首/g, '圍首'], [/中了/g, '衷了'],
+  [/教會/g, '叫會'], [/傳道/g, '船道'], [/朝見/g, '潮見'], [/應當/g, '英當'], [/應許/g, '英許'], [/相應/g, '相映'], [/看守/g, '刊守'], [/種子/g, '腫子'], [/中間/g, '衷間']];
+function ttsRef(x) {
+  return String(x).replace(/([一-鿿]{1,6})\s*(\d+)\s*[:：]\s*(\d+)(?:\s*[–\-—~～、至]\s*(\d+))?/g, function (m, bk, c, v, v2) {
+    var ps = /^詩篇$/.test(bk);
+    return bk + c + (ps ? '篇' : '章') + v + (v2 ? '到' + v2 : '') + '節';
+  });
+}
+function ttsPrep(s) {
+  var x = ttsRef(s).replace(/[←-⇿⌀-➿⬀-⯿]/g, '');
+  x = x.replace(/[「」『』（）()]/g, '');
+  TTS_FIX.forEach(function (f) { x = x.replace(f[0], f[1]); });
+  return x.replace(/^\s+|\s+$/g, '');
+}
+var SILENT_WAV = 'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAgD4AAAB9AAACABAAZGF0YQAAAAA=';
+var ttsEl = null, ttsUnlocked = false, ttsLastErr = '', raManualAt = 0, sayId = null;
+var spk = { on: false, items: [], idx: 0, cache: {}, native: false, abort: false, btn: null, label: '', root: '' };
+['wheel', 'touchmove'].forEach(function (ev) { window.addEventListener(ev, function () { raManualAt = Date.now(); }, { passive: true }); });
+function ttsAudio() {
+  if (!ttsEl) { ttsEl = new Audio(); ttsEl.preload = 'auto'; try { ttsEl.setAttribute('playsinline', ''); } catch (e) {} }
+  return ttsEl;
+}
+function ttsUnlock() {
+  if (ttsUnlocked) { return; }
+  try {
+    var a = ttsAudio(); a.src = SILENT_WAV;
+    var p = a.play();
+    if (p && p.then) { p.then(function () { ttsUnlocked = true; }, function () {}); } else { ttsUnlocked = true; }
+  } catch (e) {}
+}
+function ttsFetch(text, cb) {
+  var body = JSON.stringify({ voice: curVoice(), rate: ttsRate(), sil: TTS_SIL, silc: TTS_SILC, sile: TTS_SILE, text: text });
+  var tries = 0;
+  function attempt() {
+    var x = new XMLHttpRequest();
+    try { x.open('POST', API.tts, true); } catch (e) { ttsLastErr = 'blocked'; cb(null); return; }
+    x.setRequestHeader('Content-Type', 'application/json');
+    x.responseType = 'arraybuffer';
+    x.timeout = 20000;
+    x.onload = function () {
+      if (x.status === 200 && x.response && x.response.byteLength >= 128) {
+        cb(URL.createObjectURL(new Blob([x.response], { type: 'audio/mpeg' })));
+      } else { ttsLastErr = 'http ' + x.status; retry(); }
+    };
+    x.onerror = function () { ttsLastErr = 'network'; retry(); };
+    x.ontimeout = function () { ttsLastErr = 'timeout'; retry(); };
+    try { x.send(body); } catch (e) { ttsLastErr = 'network'; retry(); }
+  }
+  function retry() {
+    if (tries >= TTS_RETRY.length) { cb(null); return; }
+    window.setTimeout(attempt, TTS_RETRY[tries++]);
+  }
+  attempt();
+}
+function raClear() { qsa('.tts-reading').forEach(function (e) { e.classList.remove('tts-reading'); }); }
+function raSeg(item, k) {
+  if (!item || !item.segs.length) { return; }
+  k = Math.max(0, Math.min(k, item.segs.length - 1));
+  if (item.at === k && document.querySelector('.tts-reading')) { return; }
+  item.at = k; raClear();
+  var g = item.segs[k].filter(function (e) { return e && document.body.contains(e); });
+  if (!g.length) { return; }
+  g.forEach(function (e) { e.classList.add('tts-reading'); });
+  if (Date.now() - raManualAt > RA_COOLDOWN) { try { g[0].scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch (e) {} }
+}
+function raProgress(item, ratio) {
+  if (!item || item.lens.length < 2 || !(ratio >= 0)) { return; }
+  var total = 0, acc = 0, k = 0, j;
+  for (j = 0; j < item.lens.length; j++) { total += item.lens[j]; }
+  var target = Math.min(ratio, 1) * total;
+  for (j = 0; j < item.lens.length; j++) { acc += item.lens[j]; k = j; if (target < acc) { break; } }
+  raSeg(item, k);
+}
+function buildQueue(root, fromKey) {
+  var gs = groups(root), items = [], it = null, started = !fromKey;
+  function push() { if (it && it.text) { items.push(it); } it = { text: '', segs: [], lens: [], at: -1 }; }
+  push();
+  gs.forEach(function (g) {
+    if (!started) { if (g.k === fromKey) { started = true; } else { return; } }
+    var txt = gText(g);
+    if (it.text.length + txt.length > TTS_CHUNK && it.text) { push(); }
+    it.text += (it.text && !/[。！？，；：、]$/.test(it.text.replace(/[」』）)”]+$/, '')) ? '。' : '') + txt;
+    it.segs.push(g.els);
+    it.lens.push(Math.max(1, ttsPrep(txt).length));
+  });
+  push();
+  return items.filter(function (x) { return ttsPrep(x.text).length > 0; });
+}
+function ttsBtn(state) {
+  var b = spk.btn;
+  $('spkbar').className = state ? 'on' : '';
+  if (!b || !document.body.contains(b)) { return; }
+  b.setAttribute('data-state', state || '');
+  b.textContent = state ? (state === 'loading' ? '準備中……' : '⏹ 停止朗讀') : spk.label;
+}
+function ttsPrefetch(i, cb) {
+  var it = spk.items[i];
+  if (!it) { if (cb) { cb(); } return; }
+  if (spk.cache[i] !== undefined) { if (spk.cache[i] === 'pending') { it.waiters = (it.waiters || []).concat(cb ? [cb] : []); } else if (cb) { cb(); } return; }
+  spk.cache[i] = 'pending'; it.waiters = cb ? [cb] : [];
+  ttsFetch(ttsPrep(it.text), function (url) {
+    spk.cache[i] = url;
+    var w = it.waiters || []; it.waiters = [];
+    w.forEach(function (f) { f(); });
+  });
+}
+function ttsPlayFrom(i) {
+  if (!spk.on || spk.abort) { return; }
+  if (i >= spk.items.length) { ttsStop(); toast('朗讀完畢'); return; }
+  spk.idx = i; spk.items[i].at = -1; raSeg(spk.items[i], 0);
+  ttsPrefetch(i, function () {
+    for (var k = i + 1; k <= i + TTS_LOOKAHEAD; k++) { ttsPrefetch(k); }
+    if (!spk.on || spk.abort || spk.idx !== i) { return; }
+    var url = spk.cache[i];
+    if (!url) { ttsNativeFrom(i); return; }
+    ttsBtn('playing');
+    var a = ttsAudio(), old = a.src;
+    a.onended = null; a.onerror = null; a.ontimeupdate = null;
+    a.src = url;
+    if (old && old.indexOf('blob:') === 0) { try { URL.revokeObjectURL(old); } catch (e) {} }
+    a.ontimeupdate = function () {
+      if (!spk.on || spk.abort || spk.idx !== i) { return; }
+      var d = a.duration;
+      if (d && isFinite(d) && d > 0) { raProgress(spk.items[i], a.currentTime / d); }
+    };
+    a.onended = function () { a.ontimeupdate = null; if (spk.on && !spk.abort) { ttsPlayFrom(i + 1); } };
+    a.onerror = function () { if (i === 0) { ttsNativeFrom(i); } else if (spk.on && !spk.abort) { ttsPlayFrom(i + 1); } };
+    try {
+      var p = a.play();
+      if (p && p.then) { p.then(null, function () { if (i === 0) { ttsNativeFrom(i); } else if (spk.on && !spk.abort) { ttsPlayFrom(i + 1); } }); }
+    } catch (e) { ttsNativeFrom(i); }
+  });
+}
+function ttsNativeFrom(i) {
+  if (!('speechSynthesis' in window)) { toast('此裝置不支援朗讀'); ttsStop(); return; }
+  if (!spk.native) { spk.native = true; toast('改用本機語音朗讀' + (ttsLastErr ? '（' + ttsLastErr + '）' : '')); }
+  if (!spk.on || spk.abort || i >= spk.items.length) { ttsStop(); return; }
+  spk.idx = i; spk.items[i].at = -1; raSeg(spk.items[i], 0); ttsBtn('playing');
+  var say = ttsPrep(spk.items[i].text);
+  var u = new window.SpeechSynthesisUtterance(say);
+  u.lang = 'zh-TW'; u.rate = 0.95 * (S.set.rate || 1);
+  u.onboundary = function (e) { if (spk.on && !spk.abort && spk.idx === i && say.length) { raProgress(spk.items[i], (e.charIndex || 0) / say.length); } };
+  u.onend = function () { if (spk.on && !spk.abort) { ttsNativeFrom(i + 1); } };
+  u.onerror = function () { if (spk.on && !spk.abort) { ttsNativeFrom(i + 1); } };
+  try { window.speechSynthesis.speak(u); } catch (e) { ttsStop(); }
+}
+function ttsStart(root, btn, label, fromKey) {
+  ttsSayStop();
+  ttsUnlock();
+  var items = buildQueue(root, fromKey);
+  if (!items.length) { return; }
+  spk = { on: true, items: items, idx: 0, cache: {}, native: false, abort: false, btn: btn, label: label, root: 'L' + CUR.n };
+  wake(true);
+  ttsBtn('loading');
+  ttsPlayFrom(0);
+}
+function ttsToggle(root, btn, label) { if (spk.on) { ttsStop(); return; } ttsStart(root, btn, label); }
+function ttsFromKey(k) { if (spk.on) { ttsStop(); } var r = $('doc'); if (!r) { return; } ttsStart(r, $('readBtn'), '🔊 朗讀本課', k); }
+function ttsStop() {
+  spk.on = false; spk.abort = true;
+  try { if (ttsEl) { ttsEl.pause(); } } catch (e) {}
+  try { if ('speechSynthesis' in window) { window.speechSynthesis.cancel(); } } catch (e) {}
+  raClear(); ttsBtn(''); wake(false);
+  ttsSayStop();
+}
+function paintSay() {
+  qsa('.msg-act[data-a="tts"]').forEach(function (b) {
+    var on = sayId === (b.getAttribute('data-w') + b.getAttribute('data-i'));
+    b.className = 'msg-act' + (on ? ' on' : '');
+    b.textContent = on ? '⏸ 停止' : '🔊 朗讀';
+  });
+}
+function ttsSayStop() {
+  if (sayId === null) { return; }
+  try { if (ttsEl) { ttsEl.pause(); } } catch (e) {}
+  try { if ('speechSynthesis' in window) { window.speechSynthesis.cancel(); } } catch (e) {}
+  sayId = null; paintSay();
+}
+function ttsSpeakText(text, id) {
+  var clean = ttsPrep(mdSpeak(text));
+  if (!clean) { return; }
+  var parts = [], cur = '';
+  clean.split(/(?=[。！？])|\n+/).forEach(function (p) {
+    if (!p) { return; }
+    if ((cur + p).length > 280 && cur) { parts.push(cur); cur = p; } else { cur += p; }
+  });
+  if (cur) { parts.push(cur); }
+  parts = parts.map(function (p) { return p.replace(/^[。！？]\s*/, '').replace(/^\s+|\s+$/g, ''); }).filter(Boolean);
+  var urls = {}, native = false;
+  function done() { if (sayId === id) { sayId = null; paintSay(); } }
+  function fetchPart(i, cb) {
+    if (urls[i] !== undefined) { cb(); return; }
+    ttsFetch(parts[i], function (u) { urls[i] = u; cb(); });
+  }
+  function play(i) {
+    if (sayId !== id) { return; }
+    if (i >= parts.length) { done(); return; }
+    fetchPart(i, function () {
+      if (sayId !== id) { return; }
+      if (i + 1 < parts.length) { fetchPart(i + 1, function () {}); }
+      var url = urls[i];
+      if (!url || native) { speakNative(i); return; }
+      var a = ttsAudio(), old = a.src;
+      a.onended = function () { play(i + 1); }; a.onerror = function () { play(i + 1); }; a.ontimeupdate = null;
+      a.src = url;
+      if (old && old.indexOf('blob:') === 0) { try { URL.revokeObjectURL(old); } catch (e) {} }
+      try { var p = a.play(); if (p && p.then) { p.then(null, function () { native = true; speakNative(i); }); } } catch (e) { native = true; speakNative(i); }
+    });
+  }
+  function speakNative(i) {
+    if (!('speechSynthesis' in window)) { toast('此裝置不支援朗讀'); done(); return; }
+    if (!native) { native = true; toast('改用本機語音朗讀'); }
+    if (sayId !== id || i >= parts.length) { done(); return; }
+    var u = new window.SpeechSynthesisUtterance(parts[i]);
+    u.lang = 'zh-TW'; u.rate = 0.95 * (S.set.rate || 1);
+    u.onend = function () { speakNative(i + 1); }; u.onerror = function () { speakNative(i + 1); };
+    window.speechSynthesis.speak(u);
+  }
+  play(0);
+}
+var WL = null;
+function wake(on) { try { if (on && navigator.wakeLock) navigator.wakeLock.request('screen').then(function (w) { WL = w; }).catch(function () { }); else if (!on && WL) { WL.release(); WL = null; } } catch (e) { } }
+
+/* ---------- 小智：markdown 排版 ---------- */
+function tbRow(x) { return /^\s*\|.*\|\s*$/.test(x); }
+function tbSep(x) { return /^\s*\|[\s:|\-]+\|\s*$/.test(x) && x.indexOf('-') >= 0; }
+function tbCells(x) { return x.replace(/^\s+|\s+$/g, '').replace(/^\||\|$/g, '').split('|').map(function (c) { return c.replace(/^\s+|\s+$/g, ''); }); }
+function mdTableMap(src, fmt) {
+  var L = String(src || '').split('\n'), out = [], i = 0;
+  while (i < L.length) {
+    if (tbRow(L[i]) && i + 1 < L.length && tbSep(L[i + 1])) {
+      var head = tbCells(L[i]), rows = []; i += 2;
+      while (i < L.length && tbRow(L[i])) { rows.push(tbCells(L[i])); i++; }
+      out.push(rows.length ? fmt(head, rows) : head.join(' '));
+      continue;
+    }
+    out.push(L[i]); i++;
+  }
+  return out.join('\n');
+}
+function mdStrip(x) {
+  return mdTableMap(String(x || ''), function (head, rows) {
+    var ls = [];
+    if (head.filter(Boolean).length) { ls.push(head.filter(Boolean).join(' → ')); }
+    rows.forEach(function (r) { ls.push('・' + r.filter(Boolean).join(' → ')); });
+    return ls.join('\n');
+  }).replace(/^#{1,6} /gm, '').replace(/\*\*([\s\S]+?)\*\*/g, '$1').replace(/\*([\s\S]+?)\*/g, '$1').replace(/\*/g, '')
+    .replace(/^&gt; ?/gm, '').replace(/^> ?/gm, '').replace(/^---+$/gm, '').replace(/^[-*] /gm, '・').replace(/`+/g, '')
+    .replace(/\n{3,}/g, '\n\n').replace(/^\s+|\s+$/g, '');
+}
+function mdSpeak(md) {
+  return mdStrip(mdTableMap(md, function (head, rows) {
+    return '下面用表格整理：\n' + rows.map(function (r) {
+      return r.map(function (c, j) { var hh = (head[j] || ''); if (!c) { return ''; } return hh ? hh + '是' + c : c; }).filter(Boolean).join('，') + '。';
+    }).join('\n');
+  }));
+}
+function mdToHtml(s) {
+  var h = esc(s);
+  h = mdTableMap(h, function (head, rows) {
+    return '\n\n<table class="mdtb"><thead><tr>' + head.map(function (c) { return '<th>' + c + '</th>'; }).join('') + '</tr></thead><tbody>' +
+      rows.map(function (r) { return '<tr>' + r.map(function (c) { return '<td>' + c + '</td>'; }).join('') + '</tr>'; }).join('') + '</tbody></table>\n\n';
+  });
+  h = h.replace(/^#{1,6} (.*)$/gm, '<h4>$1</h4>');
+  h = h.replace(/\*\*([\s\S]+?)\*\*/g, '<b>$1</b>').replace(/(^|[^*])\*([^*\n]+?)\*/g, '$1<i>$2</i>');
+  h = h.replace(/^&gt; ?(.*)$/gm, '<blockquote>$1</blockquote>');
+  h = h.replace(/^---+$/gm, '<hr>');
+  h = h.replace(/^(?:[-*]|\d+\.) (.*)$/gm, '<li>$1</li>');
+  h = h.replace(/(<li>[\s\S]*?<\/li>)(?!\s*<li>)/g, function (m) { return '<ul>' + m + '</ul>'; });
+  return h.split(/\n{2,}/).map(function (p) {
+    return /^\s*<(h\d|ul|blockquote|hr|table)/.test(p) ? p : '<p>' + p.replace(/\n/g, '<br>') + '</p>';
+  }).join('');
+}
+
+/* ---------- 小智：回答規範 ---------- */
+var SYS_ZH = '你是「小智」，國度321空中團契「321學神院」課程《作耶穌的門徒（學員必讀）》的屬靈學伴，一位敬虔愛主、溫暖有耐心的福音派良師。你陪伴的是學神院的學員——他們也是 235 學習小家的家人，其中許多是剛入學的新生。你的使命是幫助他們在小家中被愛、被餵養、被改變，成為耶穌的門徒，並從被陪伴走到陪伴人。\n' +
+  '學神院的背景：院長是主耶穌基督，真理的聖靈親自教導；倒金字塔（負責人團隊 → 助教 → 小家長 → 學員），學員在最上面被托住。學員是「耶穌的門徒、螞蟻奇兵」，比喻是運動員：學習的主人是自己；效法耶穌「凡事順服父」：準時、誠實、受教。學員六項職責：準時出席每週小家聚會並簽到；完成當週課程、作業、測驗；每週至少與 2 同伴聯絡一次，互問四句（這週你與神的關係如何？這週「有己」在哪裡醒來？上週定的行動落實了嗎？我可以怎樣為你禱告？）；操練 920 並誠實填寫生命自省；守住小家分享的保密；聚會前送出個人週報給小家長。作業三段：我的看見、我的問題、我的行動，重在真實不在漂亮。改變觀念八大步驟：資訊、啟示、信服、實踐、檢討、修正、反覆、繁殖。920：每個跟我有關係的人是我的 2，操練 0（無己），結出 9（聖靈的果子）。五盞燈：920 自省、同伴問責、簽到、作業、測驗，是鏡子不是尺。團契公約：保密；用「我」開頭，不論斷不教導不爭辯；不推銷借貸、不拉政治立場。新生前 4 週預備期，出席 3 次以上轉正。求助次序：同伴 → 小家長 → 助教 → 各組；緊急危難可直接聯絡關懷組。成長階梯：學員 → 副小家長 → 小家長 → 助教 → 負責人同工；結業是差派。\n' +
+  '回答原則：\n' +
+  '一、確實可信：只陳述你確知的事，絕不編造文獻、數據、名人引言或經文。不確定就直說。\n' +
+  '二、經文準確：引用聖經一律用和合本原文並註明卷章節；沒有把握逐字正確時，只寫出處並用自己的話概述，不要拼湊經文。\n' +
+  '三、深入淺出：先用一兩句話直接回答，再用生活中的比喻把道理講清楚，然後帶出相關經文與屬靈意義。對新生說話要溫暖、簡單、不說教。\n' +
+  '四、321 理念：自然連結三個基礎（耶穌是我的榜樣、聖經是我的準則、聖靈是我的引導）、兩個核心（讓耶穌作王、讓耶穌得著一切的榮耀）、一個目的（建立屬神的體系）；重視無己、謙卑戰勝驕傲、先生命再關係後事工、人比事重要。不要生硬堆砌口號。\n' +
+  '五、實用可行：給具體可以照著說、照著做的一小步；鼓勵學員把問題帶回小家、告訴同伴與小家長，不要一個人撐。\n' +
+  '六、詳細完整：條理分明。建議架構：（1）一兩句直接回答；（2）分點說明；（3）一個貼切的比喻；（4）相關經文；（5）一個本週可以做的小行動。使用者要求簡短時再精簡。\n' +
+  '七、界線：遇到傷害自己或他人、侵害、家暴、嚴重身心困擾等，給予溫柔的屬靈安慰，並明確鼓勵他立刻告訴小家長或直接聯絡學神院關懷組，並尋求專業協助；涉及人身安全時，安全優先於保密。\n' +
+  '回答格式：可以用短小標題與條列；請把最重要的一句用「> 」標成引言。不要用程式碼區塊或唸不出來的裝飾符號。若寫到禱告，結尾一律用「奉主耶穌的名禱告，阿們」。';
+var QBANK_ZH = ['我第一次參加小家很緊張，怎麼辦？', '作業的「我的問題」要怎麼寫？', '我和同伴互問四句時都很客套，怎麼更真實？', '這週九果分數很低，我覺得自己很失敗。', '我想分享但怕說錯，怎麼開口？', '工作太忙跟不上進度，怎麼調整？', '請幫我用三段式整理這一課的作業。', '請根據這一課幫我寫一段禱告。'];
+function unitContext() {
+  var n = CUR.n; if (!(n >= 1 && n <= NLES)) { return ''; }
+  var d = les(n), txt = d.lead + '\n', i, j;
+  for (i = 0; i < d.secs.length && txt.length < 2400; i++) {
+    txt += '【' + d.secs[i].h + '】';
+    for (j = 0; j < d.secs[i].b.length && txt.length < 2400; j++) { var b = d.secs[i].b[j]; if (b.t === 'p' || b.t === 'h3') { txt += plain(b.x); } else if (b.i) { txt += plain(b.i.join('；')); } }
+    txt += '\n';
+  }
+  return '\n\n讀者目前在讀《作耶穌的門徒（學員必讀）》' + d.title + '。以下是本課內容，請以此為主要依據，並可補充你確知的知識：\n' + txt;
+}
+function extractReply(d) {
+  if (!d) { return ''; }
+  if (typeof d === 'string') { return d; }
+  if (d.content && d.content[0] && d.content[0].text) { return d.content[0].text; }
+  if (d.reply) { return d.reply; }
+  if (d.text) { return d.text; }
+  if (d.message && typeof d.message === 'string') { return d.message; }
+  if (d.choices && d.choices[0] && d.choices[0].message) { return d.choices[0].message.content; }
+  return '';
+}
+var THINKING = '小智正在思考……';
+var CONT_TEXT = '小智繼續寫';
+var CONT_RE = /^(小智)?(請)?(繼續|接著)(寫|說|講)?/;
+function looksCut(t) {
+  var tail = String(t || '').replace(/\s+$/, '').replace(/[*_]+$/, '');
+  if (!tail) { return false; }
+  return !/[。！？」』）)\].!?"”’…：:|—\-~～]$/.test(tail);
+}
+function chatReq(sys, msgs, cb) {
+  var tries = 0, delays = [900, 1800];
+  function attempt() {
+    var x = new XMLHttpRequest();
+    try { x.open('POST', API.chat, true); } catch (e) { cb(null, null, 'blocked'); return; }
+    x.setRequestHeader('Content-Type', 'application/json');
+    x.timeout = 120000;
+    x.onload = function () {
+      if (x.status >= 200 && x.status < 300) { var d = null; try { d = JSON.parse(x.responseText); } catch (e) { d = x.responseText; } cb(extractReply(d), d, ''); }
+      else { retry('http ' + x.status); }
+    };
+    x.onerror = function () { retry('network'); };
+    x.ontimeout = function () { retry('timeout'); };
+    try { x.send(JSON.stringify({ system: sys, messages: msgs, max_tokens: 8000 })); } catch (e) { retry('network'); }
+  }
+  function retry(why) { if (tries >= delays.length) { cb(null, null, why); return; } window.setTimeout(attempt, delays[tries++]); }
+  attempt();
+}
+function renderChat() {
+  var n = CUR.n, qs = QBANK_ZH.map(function (q) { return '<button class="qs-chip">' + esc(q) + '</button>'; }).join('');
+  $('app').innerHTML = topbar('問小智', n ? 'les/' + n : 'home') + '<div class="chatwrap">' +
+    '<p class="muted" style="margin:0">學習、小家與生活的任何問題都可以問。小智會引用和合本經文，並給你可以照著做的說法。</p>' +
+    (n ? '<div class="chatctx">目前課程：' + esc(les(n).title) + '</div>' : '') +
+    '<button class="qs-toggle" id="qsBtn">💡 提問範例</button><div class="qs-panel" id="qsPanel" hidden>' + qs + '</div>' +
+    '<div class="chatlog" id="chatlog"></div>' +
+    '<div class="chatinput"><textarea id="chatIn" rows="2" placeholder="輸入你的問題……"></textarea><button id="chatSend">送出</button></div>' +
+    '<p class="muted chatnote">小智是 AI，可能出錯；重要的事請對照聖經，並告訴你的同伴與小家長。</p></div>';
+  afterChat();
+}
+function aiCard(m, i, q, where) {
+  var busy = m.text === THINKING, fav = isFav(m.id) >= 0, col = where === 'fav' ? (m.col !== false) : !!m.col;
+  var act = function (a2, label, on) { return '<button class="msg-act' + (on ? ' on' : '') + '" data-a="' + a2 + '" data-i="' + i + '" data-w="' + where + '">' + label + '</button>'; };
+  return '<div class="msg ai' + (col ? ' col' : '') + '" data-mid="' + m.id + '">' + (q ? '<div class="msg-q">' + esc(q) + '</div>' : '') +
+    '<div class="msg-body" id="mb-' + where + '-' + m.id + '">' + mdToHtml(m.text) + '</div>' +
+    (busy ? '' : '<button class="msg-more" data-a="col" data-i="' + i + '" data-w="' + where + '">' + (col ? '展開全文 ▾' : '') + '</button>' +
+    '<div class="msg-actions">' + act('tts', sayId === (where + i) ? '⏸ 停止' : '🔊 朗讀', sayId === (where + i)) +
+    act('fav', fav ? '★ 已收藏' : '☆ 收藏', fav) + act('col', col ? '展開' : '收合', false) + act('share', '↗ 分享', false) + act('card', '🖼 美圖', false) + act('copy', '複製', false) +
+    (where === 'chat' ? act('del', '刪除', false) : '') + '</div>') + '</div>';
+}
+function bindBodies(root) {
+  qsa('.msg-body', root).forEach(function (b) {
+    Array.prototype.forEach.call(b.children, function (c, j) { c.setAttribute('data-b', j); });
+    var mid = b.parentNode.getAttribute('data-mid');
+    if (b.parentNode.textContent.indexOf(THINKING) < 0) { wrapSents(b, 'chat|' + mid); }
+  });
+  paintHl();
+}
+function logClick(e) { var t = e.target; if (t.classList && t.classList.contains('sent')) { onSentTap(t); return; } msgAction(e); }
+function paintChat() {
+  var log = $('chatlog'); if (!log) { return; }
+  if (!CHAT.length) { log.innerHTML = '<p class="muted">從上面的「提問範例」開始，或在講稿中畫一句線，按「問小智」。</p>'; return; }
+  log.innerHTML = CHAT.map(function (m, i) {
+    if (m.role === 'user') { return '<div class="msg user">' + esc(m.text) + '</div>'; }
+    return aiCard(m, i, '', 'chat');
+  }).join('');
+  bindBodies(log);
+  var last = log.lastElementChild; if (last && last.scrollIntoView) { try { last.scrollIntoView({ block: 'end' }); } catch (e) {} }
+}
+function paintChatKeep() {
+  var log = $('chatlog'); if (!log) { return; }
+  log.innerHTML = CHAT.map(function (m, i) { return m.role === 'user' ? '<div class="msg user">' + esc(m.text) + '</div>' : aiCard(m, i, '', 'chat'); }).join('');
+  bindBodies(log);
+}
+function msgAction(e) {
+  var t = e.target; if (!t.hasAttribute || !t.hasAttribute('data-a')) { return; }
+  var i = +t.getAttribute('data-i'), w = t.getAttribute('data-w'), a = t.getAttribute('data-a');
+  var list = w === 'fav' ? FAV : CHAT, m = list[i]; if (!m) { return; }
+  var q = w === 'fav' ? m.q : (CHAT[i - 1] && CHAT[i - 1].role === 'user' ? CHAT[i - 1].text : '');
+  if (a === 'del') { CHAT.splice(i, 1); if (CHAT[i - 1] && CHAT[i - 1].role === 'user') { CHAT.splice(i - 1, 1); } saveChat(); paintChat(); }
+  else if (a === 'col') {
+    m.col = w === 'fav' ? !(m.col !== false) : !m.col;
+    if (w === 'fav') { saveFav(); paintFav(); } else { saveChat(); var y = window.scrollY; paintChatKeep(); window.scrollTo(0, y); }
+  }
+  else if (a === 'fav') {
+    var k = isFav(m.id);
+    if (k >= 0) { FAV.splice(k, 1); toast('已取消收藏'); } else { FAV.unshift({ id: m.id, q: q, text: m.text, ts: Date.now() }); toast('已收藏，可在首頁「我的收藏」查看'); }
+    saveFav();
+    if (w === 'fav') { paintFav(); } else { var y2 = window.scrollY; paintChatKeep(); window.scrollTo(0, y2); }
+  }
+  else if (a === 'share') { shareAnswer(q, m.text); }
+  else if (a === 'card') { openCard(q, m.text); }
+  else if (a === 'copy') { copyTxt((q ? q + '\n\n' : '') + mdStrip(m.text)); }
+  else if (a === 'tts') {
+    var sid = w + i;
+    if (sayId === sid) { ttsSayStop(); return; }
+    ttsStop(); ttsUnlock(); sayId = sid; paintSay(); ttsSpeakText(m.text, sid);
+  }
+}
+function appUrl() { return location.protocol.indexOf('http') === 0 ? location.origin + location.pathname.replace(/index\.html$/, '') : ''; }
+function cleanQ(q) { return String(q || '').replace(/^請解釋這一段，幫助我明白它的意思，並告訴我在生活中可以怎麼應用：/, ''); }
+function shareAnswer(q, text) {
+  q = cleanQ(q);
+  var body = (q ? '問：' + q + '\n\n' : '') + mdStrip(text) + '\n\n—— 321學神院學員' + (appUrl() ? '\n' + appUrl() : '');
+  if (navigator.share) {
+    try { navigator.share({ title: '321學神院學員', text: body }).then(null, function (e) { if (!e || e.name !== 'AbortError') { copyTxt(body); } }); return; } catch (e) {}
+  }
+  copyTxt(body);
+}
+/* ---------- 美圖 ---------- */
+function rng(seed) { var x = seed; return function () { x = (x * 16807) % 2147483647; return (x - 1) / 2147483646; }; }
+function wrapText(c, text, maxW) {
+  var lines = [], cur = '';
+  var toks = /[一-鿿]/.test(text) ? text.split('') : text.split(/(?=\s)/);
+  for (var i = 0; i < toks.length; i++) {
+    var ch = toks[i];
+    if (!cur) { ch = ch.replace(/^\s+/, ''); }
+    if (c.measureText(cur + ch).width > maxW && cur) { lines.push(cur); cur = ch.replace(/^\s+/, ''); } else { cur += ch; }
+  }
+  if (cur) { lines.push(cur); }
+  return lines;
+}
+function keyLine(md) {
+  var raw = String(md || ''), LIMIT = 140;
+  var qm = raw.match(/^> ?(.+)$/m);
+  if (qm) { var qt = mdStrip(qm[1]); if (qt.length >= 10 && qt.length <= LIMIT + 60) { return qt; } }
+  var body = mdStrip(raw).split('\n').filter(function (l) { return l.replace(/\s/g, '') && !/^・/.test(l); }).join('');
+  if (body.length <= LIMIT) { return body; }
+  var parts = body.split(/(?=[。！？])/), out = '';
+  for (var i = 0; i < parts.length; i++) { var p = parts[i].replace(/^[。！？]\s*/, ''); if (out && (out + p).length > LIMIT) { break; } out += (out ? '。' : '') + p; }
+  return (out || body.slice(0, LIMIT)) + '。';
+}
+var CARD = { size: 'p', theme: 'night' };
+var CARD_SIZES = { p: [1080, 1350], s: [1080, 1080], w: [1600, 900] };
+var CARD_THEMES = {
+  night: { bg: ['#123A52', '#06131F'], ink: '#FFFFFF', sub: '#C9D8E6', acc: '#F2C96A', stars: true },
+  dawn: { bg: ['#F7D9A8', '#E88E6A'], ink: '#2B1A10', sub: '#5A3B28', acc: '#8C2F1B', stars: false },
+  paper: { bg: ['#FBF6EC', '#EFE5D2'], ink: '#23211C', sub: '#6B6255', acc: '#8A5A2B', stars: false }
+};
+function drawCard(cv, q, txt) {
+  var sz = CARD_SIZES[CARD.size], W = sz[0], H = sz[1], T = CARD_THEMES[CARD.theme];
+  cv.width = W; cv.height = H;
+  var c = cv.getContext('2d');
+  var g = c.createLinearGradient(0, 0, W * 0.4, H); g.addColorStop(0, T.bg[0]); g.addColorStop(1, T.bg[1]);
+  c.fillStyle = g; c.fillRect(0, 0, W, H);
+  if (T.stars) { var R = rng(31); for (var i = 0; i < 220; i++) { c.globalAlpha = 0.15 + R() * 0.6; c.fillStyle = '#F4E9C8'; var sd = R() < 0.92 ? 2 : 4; c.fillRect(R() * W, R() * H, sd, sd); } c.globalAlpha = 1; }
+  var serif = '"Noto Serif TC","PMingLiU","Songti TC",Georgia,serif', sans = '"Noto Sans TC","Microsoft JhengHei","PingFang TC",sans-serif';
+  var pad = Math.round(W * 0.09), maxW = W - pad * 2;
+  var icon = document.querySelector('.brandicon');
+  var by = H - pad * 0.9;
+  if (icon && icon.complete) { try { c.drawImage(icon, pad, by - 64, 64, 64); } catch (e) {} }
+  c.fillStyle = T.ink; c.font = '700 40px ' + serif; c.fillText('321學神院學員', pad + 84, by - 18);
+  c.fillStyle = T.sub; c.font = '400 26px ' + sans; c.fillText('321學神院・國度321空中團契', pad + 86, by + 16);
+  var y0 = pad * 1.1;
+  c.fillStyle = T.acc; c.fillRect(pad, y0, 90, 6);
+  y0 += 60;
+  if (q) {
+    c.fillStyle = T.sub; c.font = '500 34px ' + sans;
+    var ql = wrapText(c, q, maxW).slice(0, 3);
+    ql.forEach(function (l, i2) { c.fillText(l, pad, y0 + i2 * 50); });
+    y0 += ql.length * 50 + 40;
+  }
+  var bottomLimit = by - 120, fs = CARD.size === 'w' ? 64 : 72, lines, lh;
+  for (; fs >= 30; fs -= 2) {
+    c.font = '700 ' + fs + 'px ' + serif; lh = Math.round(fs * 1.55);
+    lines = wrapText(c, txt, maxW);
+    if (y0 + lines.length * lh <= bottomLimit) { break; }
+  }
+  c.fillStyle = T.ink; c.font = '700 ' + fs + 'px ' + serif;
+  var startY = y0 + Math.max(0, (bottomLimit - y0 - lines.length * lh) / 2) + fs;
+  lines.forEach(function (l, i3) { c.fillText(l, pad, startY + i3 * lh); });
+}
+function openCard(q, md) {
+  q = cleanQ(q);
+  var txt = keyLine(md);
+  var mask = document.createElement('div'); mask.className = 'hlsheet-mask';
+  var chip = function (k2, v, label, on) { return '<button class="cchip' + (on ? ' on' : '') + '" data-' + k2 + '="' + v + '">' + label + '</button>'; };
+  mask.innerHTML = '<div class="hlsheet-card" role="dialog" aria-label="美圖">' +
+    '<div class="hlsheet-title">做成美圖</div>' +
+    '<div class="cardpv"><img id="cardImg" alt="分享美圖"></div>' +
+    '<p class="hl-hint">長按圖片可以儲存，或按「分享圖片」直接傳到社群。</p>' +
+    '<div class="hlsheet-row"><span class="hlsheet-label">尺寸</span><div class="cchips">' + chip('size', 'p', '直式', CARD.size === 'p') + chip('size', 's', '方形', CARD.size === 's') + chip('size', 'w', '橫式', CARD.size === 'w') + '</div></div>' +
+    '<div class="hlsheet-row"><span class="hlsheet-label">風格</span><div class="cchips">' + chip('theme', 'night', '星空', CARD.theme === 'night') + chip('theme', 'dawn', '晨光', CARD.theme === 'dawn') + chip('theme', 'paper', '素雅', CARD.theme === 'paper') + '</div></div>' +
+    '<textarea class="hlsheet-ta" id="cardTxt">' + esc(txt) + '</textarea>' +
+    '<div class="hlsheet-acts"><button class="sbtn pri" data-a="sharepic">分享圖片</button><button class="sbtn" data-a="close">關閉</button></div></div>';
+  document.body.appendChild(mask);
+  var cv = document.createElement('canvas'), timer = null;
+  function redraw() {
+    drawCard(cv, q, document.getElementById('cardTxt').value);
+    try { document.getElementById('cardImg').src = cv.toDataURL('image/png'); } catch (e) {}
+  }
+  redraw();
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(redraw); }
+  document.getElementById('cardTxt').oninput = function () { window.clearTimeout(timer); timer = window.setTimeout(redraw, 300); };
+  mask.addEventListener('click', function (e) {
+    var t = e.target;
+    if (t === mask) { mask.parentNode.removeChild(mask); return; }
+    if (t.hasAttribute('data-size')) { CARD.size = t.getAttribute('data-size'); }
+    else if (t.hasAttribute('data-theme')) { CARD.theme = t.getAttribute('data-theme'); }
+    else if (t.getAttribute('data-a') === 'close') { mask.parentNode.removeChild(mask); return; }
+    else if (t.getAttribute('data-a') === 'sharepic') {
+      try {
+        cv.toBlob(function (blob) {
+          var f = null;
+          try { f = new File([blob], '321-student.png', { type: 'image/png' }); } catch (e2) {}
+          if (f && navigator.canShare && navigator.canShare({ files: [f] })) {
+            navigator.share({ files: [f], title: '321學神院學員' }).then(null, function () {});
+          } else { toast('這台裝置不能直接分享圖片，請長按圖片儲存後再分享'); }
+        }, 'image/png');
+      } catch (e3) { toast('這台裝置不能直接分享圖片，請長按圖片儲存後再分享'); }
+      return;
+    } else { return; }
+    qsa('.cchip', mask).forEach(function (b) { var on = (b.hasAttribute('data-size') && b.getAttribute('data-size') === CARD.size) || (b.hasAttribute('data-theme') && b.getAttribute('data-theme') === CARD.theme); b.className = 'cchip' + (on ? ' on' : ''); });
+    redraw();
+  });
+}
+/* ---------- 我的收藏、我的畫線 ---------- */
+function renderFav() {
+  $('app').innerHTML = topbar('我的收藏', 'home') + '<p class="muted">收藏的小智回答。可以收合、朗讀、畫線與寫筆記。</p><div class="chatlog" id="favlog"></div>';
+  paintFav();
+}
+function paintFav() {
+  var log = $('favlog'); if (!log) { return; }
+  if (!FAV.length) { log.innerHTML = '<p class="muted">還沒有收藏。在小智的回答下方按「☆ 收藏」。</p>'; return; }
+  log.innerHTML = FAV.map(function (m, i) { return aiCard(m, i, m.q, 'fav'); }).join('');
+  bindBodies(log);
+  log.onclick = logClick;
+}
+function renderHls() {
+  var ks = Object.keys(HLS).sort(function (a2, b2) { return (HLS[b2].ts || 0) - (HLS[a2].ts || 0); });
+  var h = topbar('我的畫線', 'home') + '<p class="muted">點一則畫線，就回到它所在的地方。</p><div class="hllist">';
+  if (!ks.length) { h += '<p class="muted">還沒有畫線。在講稿或小智的回答裡點一下句子就能畫線。</p>'; }
+  ks.forEach(function (k) {
+    var x = HLS[k];
+    h += '<button class="hlitem" onclick="hlGo(\'' + esc(k).replace(/'/g, '') + '\')"><span class="hlbar" style="background:' + (HL_SWATCH[x.c] || HL_SWATCH.gold) + '"></span><span class="hlmeta"><span class="hlsrc">' + esc(x.ut || '') + '</span><span class="hlt">' + esc(x.t) + '</span>' + (x.n ? '<span class="hln">' + esc(x.n) + '</span>' : '') + '</span></button>';
+  });
+  $('app').innerHTML = h + '</div>';
+}
+function hlGo(k) {
+  var x = HLS[k]; if (!x) { return; }
+  if (x.src === 'chat') {
+    var inChat = false;
+    CHAT.forEach(function (m) { if (m.id === x.mid) { inChat = true; } });
+    go(inChat ? 'chat' : 'fav');
+  } else { go('les/' + x.les + '/script'); }
+  window.setTimeout(function () {
+    var el = document.querySelector('.sent[data-k="' + k + '"]');
+    if (el) { var box = el.closest ? el.closest('.msg') : null; if (box && box.classList.contains('col')) { box.classList.remove('col'); } try { el.scrollIntoView({ block: 'center' }); } catch (e) {} }
+  }, 400);
+}
+function sendChat(text) {
+  text = String(text || '').replace(/^\s+|\s+$/g, '');
+  if (!text || chatBusy) { return; }
+  var inp = $('chatIn'); if (inp) { inp.value = ''; }
+  var lastAi = CHAT.length && CHAT[CHAT.length - 1].role === 'ai' ? CHAT[CHAT.length - 1] : null;
+  var contMode = !!lastAi && CONT_RE.test(text);
+  if (!contMode) {
+    CHAT.push({ role: 'user', text: text, id: newId() });
+    CHAT.push({ role: 'ai', text: THINKING, id: newId() });
+  }
+  chatBusy = true; paintChat();
+  var hlMode = !!chatSrc || (contMode && lastAi && lastAi.hl);
+  var sys = SYS_ZH + unitContext() + (chatSrc ? '\n讀者畫線的句子：「' + chatSrc.t + '」' : '') +
+    (hlMode ? '\n這個問題來自讀者畫線的一段文字。重點是把這一段解釋清楚、回答它的意思，並給一個具體的生活應用。回答要聚焦、精簡（約 300 到 600 字）。' : '');
+  chatSrc = null;
+  var msgs = CHAT.filter(function (m) { return m.text !== THINKING; }).slice(contMode ? -13 : -12, contMode ? -1 : undefined).map(function (m) { return { role: m.role === 'user' ? 'user' : 'assistant', content: m.text }; });
+  var MAXCONT = hlMode ? (contMode ? 0 : 1) : 6, conts = 0, acc = contMode ? lastAi.text : '';
+  var CONT_NOTE = '\n\n*（小智繼續寫……）*';
+  var aid = CHAT[CHAT.length - 1].id;
+  function show(t) { CHAT[CHAT.length - 1] = { role: 'ai', text: t, id: aid }; paintChat(); }
+  if (contMode) { show(acc + CONT_NOTE); }
+  function finish(reply, why) {
+    var old = CHAT[CHAT.length - 1] || {};
+    CHAT[CHAT.length - 1] = { role: 'ai', id: aid, col: old.col, text: reply || ('小智暫時連不上，請確認網路後再試一次。' + (why ? '（' + why + '）' : '')) };
+    chatBusy = false; saveChat(); paintChat();
+    var box = $('chatIn');
+    if (hlMode) { CHAT[CHAT.length - 1].hl = true; saveChat(); }
+    if (box && reply && !hlMode && (why || looksCut(reply))) { box.value = CONT_TEXT; toast('回答可能還沒寫完，按「送出」讓小智繼續寫'); }
+  }
+  function cut(d, r) {
+    if (!r) { return false; }
+    if (d && typeof d === 'object') {
+      if (d.stop_reason === 'max_tokens' || d.finish_reason === 'length') { return true; }
+      if (d.choices && d.choices[0] && d.choices[0].finish_reason === 'length') { return true; }
+      if (d.stop_reason === 'end_turn' || (d.choices && d.choices[0] && d.choices[0].finish_reason === 'stop')) { return false; }
+    }
+    var tail = r.replace(/\s+$/, '');
+    return tail.length > 600 && looksCut(tail);
+  }
+  function payload() {
+    var m = msgs.slice();
+    if (acc) {
+      m.push({ role: 'assistant', content: acc.replace(/\s+$/, '') });
+      m.push({ role: 'user', content: '你的回答被截斷了。請從剛才停下的地方直接接著寫下去，不要重複已經寫過的內容，也不要加任何開場白。' });
+    }
+    return m;
+  }
+  function join(a2, b2) {
+    if (!a2) { return b2; }
+    b2 = b2.replace(/^\s+/, '');
+    for (var n = Math.min(80, b2.length, a2.length); n >= 8; n--) { if (a2.slice(-n) === b2.slice(0, n)) { return a2 + b2.slice(n); } }
+    var glue = /[一-鿿]$/.test(a2) || /^[一-鿿]/.test(b2) ? '' : (/\n$/.test(a2) ? '' : ' ');
+    return a2 + glue + b2;
+  }
+  function step() {
+    chatReq(sys, payload(), function (r, d, why) {
+      if (why) { finish(acc, why); return; }
+      if (!r) { finish(acc, acc ? '' : 'empty'); return; }
+      var more = cut(d, r) && conts < MAXCONT;
+      acc = join(acc, r);
+      if (more) { conts++; show(acc + CONT_NOTE); step(); } else { finish(acc); }
+    });
+  }
+  step();
+}
+function afterChat() {
+  paintChat();
+  var btn = $('qsBtn'), panel = $('qsPanel');
+  if (btn) { btn.onclick = function () { panel.hidden = !panel.hidden; }; }
+  qsa('.qs-chip').forEach(function (c) { c.onclick = function () { panel.hidden = true; sendChat(c.textContent); }; });
+  $('chatSend').onclick = function () { sendChat($('chatIn').value); };
+  $('chatIn').onkeydown = function (e) { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendChat(e.target.value); } };
+  $('chatlog').onclick = logClick;
+  if (chatPending) { var p = chatPending; chatPending = null; sendChat(p); }
+}
+
+/* ---------- 情境對練（小智扮演家人） ---------- */
+var RP = { msgs: [], sys: '', title: '', busy: false };
+function rolePlay(n) {
+  var sc = les(n).scen, who = rpWho(n);
+  RP = { title: '對練：' + sc.h, busy: false, msgs: [],
+    sys: SYS_ZH + '\n\n現在請進行角色扮演。情境：' + sc.q + '\n請你扮演情境中的那位' + who + '，只用' + who + '的口吻回應學員，每次不超過 80 字，語氣真實自然，不要跳出角色。當學員輸入「回饋」時，請跳出角色，用溫暖鼓勵的語氣，依照本課重點評估學員的回應：是否真實、是否用「我」開頭、是否謙卑受教、是否像一位家人，並提供一個更好的說法，並提供一個更好的說法。' };
+  drawRP();
+  toast('你先開口，對「' + who + '」說第一句話');
+}
+function drawRP() {
+  var h = '<div class="row"><b class="grow">' + esc(RP.title) + '</b><button class="back" onclick="closeSheet()">關閉</button></div><div class="chatlog rp" id="rpbox">';
+  for (var i = 0; i < RP.msgs.length; i++) h += RP.msgs[i].role === 'user' ? '<div class="msg user">' + esc(RP.msgs[i].content) + '</div>' : '<div class="msg ai"><div class="msg-body">' + mdToHtml(RP.msgs[i].content) + '</div></div>';
+  if (RP.busy) h += '<div class="msg ai">' + THINKING + '</div>';
+  h += '</div><div class="chatinput" style="position:static"><textarea id="rpin" rows="2" placeholder="你會怎麼說？"></textarea><button onclick="sendRP()">送出</button></div><div class="btns"><button class="btn alt" onclick="sendRP(\'回饋\')">請小智回饋我的回應</button></div>';
+  sheet(h);
+  var b = $('rpbox'); if (b) { b.scrollTop = b.scrollHeight; }
+}
+function sendRP(t) {
+  var v = t || ($('rpin') && $('rpin').value.replace(/^\s+|\s+$/g, ''));
+  if (!v || RP.busy) { return; }
+  RP.msgs.push({ role: 'user', content: v }); RP.busy = true; drawRP();
+  chatReq(RP.sys, RP.msgs, function (r, d, why) {
+    RP.busy = false;
+    RP.msgs.push({ role: 'assistant', content: r || ('小智暫時連不上，請確認網路後再試一次。' + (why ? '（' + why + '）' : '')) });
+    drawRP();
+  });
+}
+
+/* ---------- 版本更新：網站有新版就提醒一鍵更新 ---------- */
+var updShown = false;
+function checkNewVer(manual) {
+  if (updShown || !/^https?:/.test(location.protocol)) { if (manual) toast('目前是最新版'); return; }
+  var x = new XMLHttpRequest();
+  try { x.open('GET', 'version.json?t=' + Date.now(), true); } catch (e) { return; }
+  x.onreadystatechange = function () {
+    if (x.readyState !== 4) { return; }
+    if (x.status !== 200) { if (manual) toast('無法檢查更新'); return; }
+    var v = null; try { v = JSON.parse(x.responseText).v; } catch (e) {}
+    if (v && v !== VER) { showUpdate(v); } else if (manual) { toast('目前是最新版 v' + VER); }
+  };
+  x.send();
+}
+function showUpdate(v) {
+  updShown = true;
+  var d = document.createElement('button');
+  d.className = 'updbar'; d.textContent = '有新版本 v' + v + '，點一下立即更新';
+  d.onclick = function () {
+    d.textContent = '更新中……';
+    var go2 = function () { location.replace(location.pathname + '?v=' + v + location.hash); };
+    try {
+      var jobs = [];
+      if (window.caches && caches.keys) { jobs.push(caches.keys().then(function (ks) { return Promise.all(ks.map(function (k) { return caches.delete(k); })); })); }
+      if (navigator.serviceWorker && navigator.serviceWorker.getRegistrations) { jobs.push(navigator.serviceWorker.getRegistrations().then(function (rs) { return Promise.all(rs.map(function (r) { return r.update(); })); })); }
+      Promise.all(jobs).then(go2, go2);
+      window.setTimeout(go2, 2500);
+    } catch (e) { go2(); }
+  };
+  document.body.appendChild(d);
+}
+window.setTimeout(checkNewVer, 2500);
+document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'visible') { checkNewVer(); } });
+window.setInterval(checkNewVer, 30 * 60 * 1000);
+
+/* ---------- 啟動・更新 ---------- */
+(function boot() {
+  var m = location.search.match(/[?&]code=([^&]+)/);
+  if (m && !S.auth.ok) unlock(decodeURIComponent(m[1]));
+  function start() { render(); }
+  var x = new XMLHttpRequest();
+  x.open('GET', 'lessons.json?v=' + VER, true);
+  x.onreadystatechange = function () {
+    if (x.readyState !== 4) return;
+    try { DATA = JSON.parse(x.responseText); } catch (e) { DATA = null; }
+    if (DATA && DATA.length === NLES) start();
+    else $('app').innerHTML = '<div class="lock"><div class="warnbox">課程內容載入失敗，請連上網路後重新開啟。</div></div>';
+  };
+  x.send();
+  if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+    var reloading = false;
+    navigator.serviceWorker.addEventListener('controllerchange', function () { if (reloading) return; reloading = true; location.reload(); });
+    navigator.serviceWorker.register('sw.js').then(function (r) {
+      r.update();
+      document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'visible') r.update(); });
+    }).catch(function () { });
+  }
+})();
+</script></body></html>
