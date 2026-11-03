@@ -1,5 +1,5 @@
-var V = 'st321-1.0.3-vp1023-gx1103-k3m-co1';
-var FILES = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './lessons.json', './coread.js', './peerjs.min.js'];
+var V = 'st321-1.0.3-vp1023-gx1103-k3m-co1-xz1103';
+var FILES = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './lessons.json', './xz2.js', './coread.js', './peerjs.min.js'];
 self.addEventListener('install', function (e) {
   self.skipWaiting();
   e.waitUntil(caches.open(V).then(function (c) { return c.addAll(FILES); }));
