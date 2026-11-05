@@ -3,9 +3,10 @@
    ‧ install：skipWaiting；預載用 cache:'reload' 繞過 HTTP 快取（GitHub Pages 會快取 10 分鐘）
    ‧ activate：只清自己前綴（PFX）的舊快取——同一個 github.io 網域的各 App 共用 Cache Storage，不能刪別人的；
      clients.claim 後通知所有頁面（頁面自己判斷空閒才重整）
-   ‧ fetch：HTML／JS／JSON／CSS 網路優先（no-cache），離線才用快取；圖片等快取優先；影音與 Range 請求不攔截 */
+   ‧ fetch：HTML／JS／JSON／CSS 網路優先（no-cache）＋1 秒競速（網路超過 1 秒沒回就先用快取，網路那份繼續下載並更新快取）；圖片等快取優先；影音與 Range 請求不攔截
+   ‧ tts-audio 是朗讀音檔快取（-rf1105），不以 PFX 開頭，不會被清 */
 var PFX = 'st321-';
-var VER = '1.0.3-vp1023-gx1103-co1-xz1103-au1103-xzm1103';
+var VER = '1.0.3-vp1023-gx1103-co1-xz1103-au1103-xzm1103-rf1105';
 var V = PFX + VER;
 var SHELL = ["./", "./index.html", "./manifest.json", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png", "./lessons.json", "./coread.js", "./peerjs.min.js", "./xz2.js", "./xzm.js"];
 self.addEventListener('install', function (e) {
@@ -38,17 +39,32 @@ self.addEventListener('fetch', function (e) {
   var nav = r.mode === 'navigate' || /\.html$/.test(p) || /\/$/.test(p);
   var key = u.origin + p + (/\/$/.test(p) ? 'index.html' : '');
   if (nav || /\.(json|js|css)$/.test(p)) {
-    e.respondWith(fetch(r.url, { cache: 'no-cache', credentials: 'same-origin' }).then(function (resp) {
-      if (resp && resp.ok) { var cp = resp.clone(); caches.open(V).then(function (c) { c.put(key, cp); }); }
-      return resp;
-    })['catch'](function () {
-      return caches.match(key).then(function (h) {
-        return h || caches.match(r, { ignoreSearch: true }).then(function (h2) { return h2 || (nav ? caches.match(u.origin + p.replace(/[^\/]*$/, '') + 'index.html') : undefined); });
-      });
-    }));
+    e.respondWith(shellFetch(r, u, p, key, nav));
     return;
   }
   e.respondWith(caches.match(r, { ignoreSearch: true }).then(function (h) {
     return h || fetch(r).then(function (resp) { if (resp && resp.ok) { var cp = resp.clone(); caches.open(V).then(function (c) { c.put(r, cp); }); } return resp; });
   }));
 });
+
+/* 網路優先，但最多等 SHELL_WAIT 毫秒：超過就先用「完全相同」的快取（沒有快取就繼續等網路）；網路那份回來後更新快取。
+   只有導覽請求才可以退回 index.html（程式檔退回 HTML 會被當 JS 執行而出錯）。 */
+var SHELL_WAIT = 1000;
+function cacheLookup(r, u, p, key, nav) {
+  return caches.match(key).then(function (h) {
+    return h || caches.match(r, { ignoreSearch: true }).then(function (h2) {
+      return h2 || (nav ? caches.match(u.origin + p.replace(/[^\/]*$/, '') + 'index.html') : undefined);
+    });
+  });
+}
+function shellFetch(r, u, p, key, nav) {
+  var net = fetch(r.url, { cache: 'no-cache', credentials: 'same-origin' }).then(function (resp) {
+    if (resp && resp.ok) { var cp = resp.clone(); caches.open(V).then(function (c) { c.put(key, cp); }); }
+    return resp;
+  });
+  var netSafe = net['catch'](function () { return cacheLookup(r, u, p, key, nav).then(function (h) { if (h) return h; return net; }); });
+  var timer = new Promise(function (res) {
+    setTimeout(function () { cacheLookup(r, u, p, key, nav).then(function (h) { if (h) res(h); }); }, SHELL_WAIT);
+  });
+  return Promise.race([netSafe, timer]);
+}
