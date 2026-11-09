@@ -6,7 +6,7 @@
    ‧ fetch：HTML／JS／JSON／CSS 網路優先（no-cache）＋1 秒競速（網路超過 1 秒沒回就先用快取，網路那份繼續下載並更新快取）；圖片等快取優先；影音與 Range 請求不攔截
    ‧ tts-audio 是朗讀音檔快取（-rf1105），不以 PFX 開頭，不會被清 */
 var PFX = 'st321-';
-var VER = '1.0.3-vp1023-gx1103-co1-xz1103-au1103-xzm1103-rf1105';
+var VER = '1.0.3-vp1023-gx1103-co1-xz1103-au1103-xzm1103-rf1105-nv1109';
 var V = PFX + VER;
 var SHELL = ["./", "./index.html", "./manifest.json", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png", "./lessons.json", "./coread.js", "./peerjs.min.js", "./xz2.js", "./xzm.js"];
 self.addEventListener('install', function (e) {
